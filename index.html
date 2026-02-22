@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyster House Festival — Carnac, Morbihan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img src="assets/logo-oyster-house.png" alt="Oyster House" class="header__logo-img" />
+    </a>
+    <nav class="header__nav">
+      <a href="#programme" class="btn-oyster btn-oyster--nav">
+        <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
+        <span class="btn-oyster__label">Programme</span>
+      </a>
+      <a href="#photos" class="btn-oyster btn-oyster--nav">
+        <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
+        <span class="btn-oyster__label">Photos</span>
+      </a>
+      <a href="#editions" class="btn-oyster btn-oyster--nav">
+        <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
+        <span class="btn-oyster__label">Éditions</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ═══ HERO — Grille fragmentée ════════════════════════ -->
+  <section class="hero">
+
+    <!-- Bloc A : Grand titre collé à gauche, sticky -->
+    <div class="hero__block hero__block--title">
+      <p class="hero__eyebrow">Carnac · Morbihan · Est. 2018</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">OYSTER</span>
+        <span class="hero__title-line hero__title-line--indent">HOUSE</span>
+      </h1>
+      <p class="hero__edition">9<sup>ème</sup> édition — 2026</p>
+    </div>
+
+    <!-- Bloc B : Photo principale plein cadre -->
+    <div class="hero__block hero__block--img-main">
+      <img src="assets/hero-OH-2019.png" alt="Vue aérienne Oyster House — festival au coucher de soleil, L'Anse du Pô" />
+    </div>
+
+    <!-- Bloc C : Accroche + date + CTA -->
+    <div class="hero__block hero__block--info">
+      <p class="hero__tagline">Un cycle de marée<br>en musique pour apprécier<br>ce que la mer nous<br>apporte de mieux.</p>
+      <div class="hero__meta">
+        <span class="hero__meta-item">L'Anse du Pô</span>
+        <span class="hero__meta-sep">·</span>
+        <span class="hero__meta-item">Baie de Quiberon</span>
+        <span class="hero__meta-sep">·</span>
+        <span class="hero__meta-item">Chaque été</span>
+      </div>
+      <a href="#billetterie" class="btn btn--gold">Réserver ma place</a>
+    </div>
+
+    <!-- Bloc D : Photo portrait -->
+    <div class="hero__block hero__block--img-portrait">
+      <img src="assets/galerie/2022/galerie-huitre.jpeg" alt="Dégustation d'huître, Oyster House 2022" />
+    </div>
+
+    <!-- Bloc E : Stat isolée, fond teal -->
+    <div class="hero__block hero__block--stat">
+      <span class="hero__stat-num">12H</span>
+      <span class="hero__stat-label">Un cycle de marée complet</span>
+    </div>
+
+  </section>
+
+  <!-- ═══ PRÉSENTATION — Layout éditorial sticky ══════════ -->
+  <section class="about" id="about">
+
+    <div class="about__sticky">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">LE FESTIVAL</span>
+      </div>
+      <h2 class="about__title">Un temps<br>suspendu<br>entre deux<br>marées.</h2>
+      <p class="about__year">Collectif local · Est. 2018<br>9ème édition 2026</p>
+    </div>
+
+    <div class="about__content">
+
+      <p class="about__lead">
+        Chaque année depuis 2018, nous investissons l'Anse du Pô — un spot de renommée mondiale pour les sports de glisse, niché au cœur de la Baie de Quiberon. Un lieu chargé d'histoire, de vent et d'iode, où les huîtres poussent lentement dans une eau d'exception.
+      </p>
+
+      <div class="about__blocks">
+        <div class="about-block">
+          <h3 class="about-block__title">Le lieu</h3>
+          <p class="about-block__text">La baie de Quiberon n'est pas un lieu comme les autres. Terrain de jeu des windsurfeurs et kiteurs de haut niveau, haut lieu de la régate mondiale et terroir ostréicole d'exception. Nous posons notre scène directement sur l'exploitation, les pieds dans l'estran.</p>
+        </div>
+        <div class="about-block">
+          <h3 class="about-block__title">L'esprit</h3>
+          <p class="about-block__text">Nous sommes une bande de potes qui ont grandi ici, entre les bateaux, les casiers à homards et les planches à voile. Pas de décor en carton-pâte. Tout ce qui compose le festival vient du territoire, de la mer ou des mains de ceux qui y vivent.</p>
+        </div>
+        <div class="about-block">
+          <h3 class="about-block__title">La table</h3>
+          <p class="about-block__text">Des huîtres tirées du parc le matin même. Des homards. Des produits de la mer de grande qualité, cuisinés par des chefs qui connaissent et respectent la matière. Ici, l'assiette est aussi une déclaration d'intention.</p>
+        </div>
+        <div class="about-block">
+          <h3 class="about-block__title">La scénographie</h3>
+          <p class="about-block__text">Chaque édition, nous confions la scénographie à des artistes et artisans locaux — cordages, bois de bateau, filets, balisage, caisseries ostréicoles. Ce qui aurait fini en déchets devient décor, lumière, installation.</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__num">9</span>
+          <span class="stats__label">ÉDITIONS</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num">12H</span>
+          <span class="stats__label">DE MUSIQUE</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ MISSION — Pleine largeur typographique ══════════ -->
+  <section class="mission" id="mission">
+
+    <div class="mission__top">
+
+      <div class="mission__intro">
+        <div class="section-label section-label--light">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">LE FESTIVAL</span>
+        </div>
+        <h2 class="mission__title">L'huître,<br>c'est<br>nous.</h2>
+      </div>
+
+      <div class="mission__body">
+        <p class="mission__p">Pas par hasard qu'on s'appelle Oyster House. L'huître, c'est le symbole de ce territoire, de ceux qui y vivent, de ceux qui y travaillent. Et franchement, elle le mérite.</p>
+        <p class="mission__p">Ce petit coquillage filtre jusqu'à 200 litres d'eau par jour. Elle absorbe l'azote, piège les microplastiques, régule les écosystèmes côtiers. Discrète, efficace, essentielle — un peu comme les ostréiculteurs qui en prennent soin.</p>
+        <p class="mission__p">La mer, on y passe la majeure partie de notre temps. On la surfe, on la navigue, on s'y baigne. Elle nous fait vibrer, elle nous ressource, elle nous définit. Elle nourrit l'âme autant que l'esprit. Elle nous a inspirés — et c'est ce qu'on a envie de vous transmettre.</p>
+        <p class="mission__p">Alors on fait attention à elle. Pas parce qu'on nous l'a demandé. Parce qu'on l'aime.</p>
+        <p class="mission__p">Sauf que ni l'huître ni les ostréiculteurs ne font beaucoup de bruit. Acidification des eaux, pression démographique, agents pathogènes — des défis réels, souvent invisibles depuis la côte.</p>
+        <p class="mission__p mission__p--coda">Oyster House, c'est leur donner une scène.</p>
+
+        <div class="mission__stats">
+          <div class="mission__stat">
+            <span class="mission__stat-num">200 L</span>
+            <span class="mission__stat-label">filtrés par huître · par jour</span>
+          </div>
+          <div class="mission__stat">
+            <span class="mission__stat-num">4 000</span>
+            <span class="mission__stat-label">emplois en conchyliculture morbihannaise</span>
+          </div>
+          <div class="mission__stat">
+            <span class="mission__stat-num">25 000 t</span>
+            <span class="mission__stat-label">de coquillages produits chaque année</span>
+          </div>
+          <div class="mission__stat">
+            <span class="mission__stat-num">320</span>
+            <span class="mission__stat-label">entreprises conchylicoles en Morbihan</span>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar">
+            <span class="pillar__num">01 —</span>
+            <h3 class="pillar__title">Environnemental</h3>
+            <p class="pillar__desc">Les coquillages filtrent l'eau, régulent nos littoraux et maintiennent l'équilibre naturel des côtes bretonnes.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__num">02 —</span>
+            <h3 class="pillar__title">Économique &amp; Social</h3>
+            <p class="pillar__desc">320 entreprises, 4 000 emplois, 50 M€ de chiffre d'affaires — un tissu vivant, ancré dans le territoire depuis des générations.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar__num">03 —</span>
+            <h3 class="pillar__title">Culturel</h3>
+            <p class="pillar__desc">Depuis les mégalithes de Carnac, les coquillages font partie du paysage. On est là pour que ça continue.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ═══ PHOTOS — Grille éditoriale masonry ═══════════════ -->
+  <section class="photos" id="photos">
+
+    <div class="photos__header">
+      <div class="photos__header-left">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">ARCHIVES PHOTOS</span>
+        </div>
+        <h2 class="photos__title">Revivez<br>chaque édition.</h2>
+      </div>
+      <a href="#editions" class="btn btn--outline">Voir les éditions →</a>
+    </div>
+
+    <div class="photos__grid">
+      <div class="photos__col">
+        <div class="photos__img-wrap" style="height: 360px;">
+          <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Concert festival nuit 2022" loading="lazy" />
+        </div>
+        <div class="photos__img-wrap" style="height: 220px;">
+          <img src="assets/galerie/2022/galerie-public-1.jpeg" alt="Festivaliers 2022" loading="lazy" />
+        </div>
+      </div>
+      <div class="photos__col">
+        <div class="photos__img-wrap" style="height: 220px;">
+          <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Vue aérienne Anse du Pô 2022" loading="lazy" />
+        </div>
+        <div class="photos__img-wrap" style="height: 360px;">
+          <img src="assets/galerie/2022/galerie-coucher-soleil.jpeg" alt="Coucher de soleil Anse du Pô 2022" loading="lazy" />
+        </div>
+      </div>
+      <div class="photos__col">
+        <div class="photos__img-wrap" style="height: 290px;">
+          <img src="assets/galerie/2022/galerie-gastronomie.jpeg" alt="Gastronomie maritime 2022" loading="lazy" />
+        </div>
+        <div class="photos__img-wrap" style="height: 290px;">
+          <img src="assets/galerie/2022/galerie-baie.jpeg" alt="Baie de Quiberon 2022" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ ÉDITIONS — Grille 9 cartes ══════════════════════ -->
+  <section class="editions" id="editions">
+
+    <div class="editions__header">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">ÉDITIONS</span>
+      </div>
+      <h2 class="editions__title">9 éditions,<br>un territoire.</h2>
+    </div>
+
+    <div class="editions__grid">
+      <a href="edition-2026.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1707991462878-a2caac1fb69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2026" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2026</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2025.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1759299983112-9b131c96cffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2025" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2025</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2024.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1684325529914-2be4270b5048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2024" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2024</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2023.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1707991462878-a2caac1fb69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2023" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2023</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2022.html" class="edition-card edition-card--featured">
+        <div class="edition-card__img">
+          <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House 2022" loading="lazy" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2022</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2021.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1721814734746-9fac2f9cee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2021" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2021</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2020.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1770399883774-4a5ca3e32a7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2020" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2020</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2019.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1761637949731-be40a0ba9727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2019" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2019</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+      <a href="edition-2018.html" class="edition-card">
+        <div class="edition-card__img">
+          <img src="https://images.unsplash.com/photo-1767275737844-b45b21a81d5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2018" />
+        </div>
+        <div class="edition-card__footer">
+          <span class="edition-card__year">2018</span>
+          <span class="edition-card__arrow">→</span>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ═══ PROGRAMME — Split photo / texte ════════════════ -->
+  <section class="programme" id="programme">
+
+    <div class="programme__img-wrap">
+      <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Scène Oyster House 2022 — concert au coucher de soleil" class="programme__img" />
+    </div>
+
+    <div class="programme__content">
+      <div class="section-label">
+        <span class="section-label__line"></span>
+        <span class="section-label__text">PROGRAMME · MUSIQUE · GASTRONOMIE · MER</span>
+      </div>
+      <h2 class="programme__title">Douze<br>heures.<br>Un territoire.</h2>
+      <p class="programme__desc">
+        Musique live, artistes locaux, scénographie éphémère. Gastronomie maritime — huîtres, homards, produits locaux. Artisans, pêcheurs, conchyliculteurs. Wing et windsurf welcome.
+      </p>
+      <div class="programme__tags">
+        <span class="tag">Musique live</span>
+        <span class="tag">Gastronomie</span>
+        <span class="tag">Sports de glisse</span>
+        <span class="tag">Circuit court</span>
+      </div>
+      <a href="#billetterie" class="btn btn--outline">Voir le programme</a>
+    </div>
+
+  </section>
+
+  <!-- ═══ TICKETS — Pleine largeur, fond doré ═════════════ -->
+  <section class="tickets" id="billetterie">
+    <div class="tickets__inner">
+      <div class="section-label section-label--dark">
+        <span class="section-label__line section-label__line--dark"></span>
+        <span class="section-label__text section-label__text--dark">BILLETTERIE</span>
+      </div>
+      <h2 class="tickets__title">Prenez<br>votre place.</h2>
+      <p class="tickets__sub">Chaque été à l'Anse du Pô, Carnac. Huîtres, musique et marées — rejoignez le mouvement.</p>
+      <div class="tickets__cta-row">
+        <a href="#" class="btn btn--dark">Acheter mes billets</a>
+        <span class="tickets__date">L'Anse du Pô · Carnac · Morbihan</span>
+      </div>
+    </div>
+    <div class="tickets__img">
+      <img src="assets/galerie/2022/galerie-equipe.jpeg" alt="L'équipe Oyster House" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="assets/logo-oyster-house.png" alt="Oyster House" class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline">12 heures de musique, de mer et de marée. Un festival ancré dans un territoire d'exception depuis 2018.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social">Instagram</a>
+          <a href="#" class="footer__social">TikTok</a>
+          <a href="#" class="footer__social">Soundcloud</a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__col">
+          <span class="footer__col-title">FESTIVAL</span>
+          <a href="#programme" class="footer__link">Programme</a>
+          <a href="#photos" class="footer__link">Éditions passées</a>
+          <a href="#" class="footer__link">L'Anse du Pô</a>
+          <a href="#" class="footer__link">Presse &amp; Médias</a>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">PRATIQUE</span>
+          <a href="#billetterie" class="footer__link">Billetterie</a>
+          <a href="#editions" class="footer__link">Photos à télécharger</a>
+          <a href="#mission" class="footer__link">Notre engagement</a>
+          <a href="#" class="footer__link">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Mentions légales</a>
+        <a href="#" class="footer__legal-link">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

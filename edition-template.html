@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oyster House {{YEAR}} — {{N}}ème édition · Carnac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="edition.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header__logo"><img src="assets/logo-oyster-house.png" alt="Oyster House" class="header__logo-img" /></a>
+    <nav class="header__nav">
+      <a href="index.html#programme" class="header__nav-link">Programme</a>
+      <a href="index.html#photos" class="header__nav-link">Photos</a>
+      <a href="index.html#editions" class="header__nav-link">Éditions</a>
+      <a href="index.html#billetterie" class="header__cta">Billetterie →</a>
+    </nav>
+  </header>
+
+  <!-- ══ HERO ÉDITION ══
+       Remplacer l'image src par la photo de couverture de l'édition
+       → assets/galerie/{{YEAR}}/galerie-concert-soir.jpeg ou autre
+  ══ -->
+  <section class="edition-hero">
+    <img src="https://images.unsplash.com/photo-1684325529914-2be4270b5048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600" alt="Oyster House {{YEAR}}" class="edition-hero__img" />
+    <div class="edition-hero__overlay">
+      <a href="index.html#editions" class="edition-hero__back">← Toutes les éditions</a>
+      <div class="edition-hero__content">
+        <div class="edition-hero__badge">
+          <span class="edition-hero__badge-line"></span>
+          <span class="edition-hero__badge-text">{{N}}ÈME ÉDITION · {{DATE}}</span>
+        </div>
+        <h1 class="edition-hero__title">Oyster House<br>{{YEAR}}</h1>
+        <p class="edition-hero__meta">L'Anse du Pô · Carnac · Morbihan</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="edition-page">
+
+    <!-- ══ ARTISTES ══
+         Remplacer chaque [À compléter] par le nom de l'artiste
+         Types possibles : Live · DJ Set · Vinyle · Électro · Acoustic
+    ══ -->
+    <section class="edition-section">
+      <div class="edition-section__label">
+        <span class="edition-section__label-line"></span>
+        <span class="edition-section__label-text">AU PROGRAMME</span>
+      </div>
+      <h2 class="edition-section__title">Les artistes</h2>
+      <p class="edition-section__desc">Les artistes qui ont fait résonner l'Anse du Pô en {{YEAR}}.</p>
+      <ul class="artistes-list">
+        <li class="artistes-list__item">
+          <span class="artistes-list__name">[À compléter]</span>
+          <span class="artistes-list__type">Live</span>
+        </li>
+        <li class="artistes-list__item">
+          <span class="artistes-list__name">[À compléter]</span>
+          <span class="artistes-list__type">DJ Set</span>
+        </li>
+        <li class="artistes-list__item">
+          <span class="artistes-list__name">[À compléter]</span>
+          <span class="artistes-list__type">Live</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ══ AFTER MOVIE ══
+         Pour intégrer une vidéo YouTube :
+         1. Aller sur la vidéo YouTube
+         2. Clic droit → Copier le lien d'intégration
+         3. Supprimer le <div class="edition-video__placeholder">...</div>
+         4. Décommenter et compléter l'<iframe> ci-dessous
+    ══ -->
+    <section class="edition-section">
+      <div class="edition-section__label">
+        <span class="edition-section__label-line"></span>
+        <span class="edition-section__label-text">AFTER MOVIE</span>
+      </div>
+      <h2 class="edition-section__title">Revivez l'édition</h2>
+      <div class="edition-video">
+        <div class="edition-video__placeholder">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="23" stroke="#C9A96E" stroke-width="2"/>
+            <polygon points="20,16 34,24 20,32" fill="#C9A96E"/>
+          </svg>
+          <p>After movie {{YEAR}}</p>
+          <p class="edition-video__hint">Insérer l'embed YouTube ou Vimeo ici</p>
+        </div>
+        <!--
+        <iframe
+          src="https://www.youtube.com/embed/XXXXXXXXX"
+          title="After movie Oyster House {{YEAR}}"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        -->
+      </div>
+    </section>
+
+    <!-- ══ CAROUSEL PHOTOS ══
+         Dupliquer les <a class="carousel__slide"> pour chaque photo
+         de l'édition. Photos à placer dans assets/galerie/{{YEAR}}/
+    ══ -->
+    <section class="edition-section">
+      <div class="edition-section__header">
+        <div>
+          <div class="edition-section__label">
+            <span class="edition-section__label-line"></span>
+            <span class="edition-section__label-text">ARCHIVES PHOTO</span>
+          </div>
+          <h2 class="edition-section__title">Photos à télécharger</h2>
+          <p class="edition-section__desc">Cliquez sur une photo pour la télécharger en haute résolution.</p>
+        </div>
+        <!-- Optionnel : lien vers un ZIP de toutes les photos de l'édition -->
+        <!-- <a href="assets/galerie/{{YEAR}}.zip" class="btn btn--outline edition-dl-all" download>↓ Tout télécharger</a> -->
+      </div>
+
+      <div class="carousel">
+        <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Photo précédente">‹</button>
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+
+            <!-- Modèle de slide — dupliquer pour chaque photo -->
+            <a href="assets/galerie/{{YEAR}}/photo-01.jpeg"
+               download="oyster-house-{{YEAR}}-01.jpg"
+               class="carousel__slide" title="Télécharger">
+              <img src="assets/galerie/{{YEAR}}/photo-01.jpeg" alt="Oyster House {{YEAR}}" loading="lazy" />
+              <div class="carousel__slide-overlay"></div>
+            </a>
+
+            <a href="assets/galerie/{{YEAR}}/photo-02.jpeg"
+               download="oyster-house-{{YEAR}}-02.jpg"
+               class="carousel__slide" title="Télécharger">
+              <img src="assets/galerie/{{YEAR}}/photo-02.jpeg" alt="Oyster House {{YEAR}}" loading="lazy" />
+              <div class="carousel__slide-overlay"></div>
+            </a>
+
+            <a href="assets/galerie/{{YEAR}}/photo-03.jpeg"
+               download="oyster-house-{{YEAR}}-03.jpg"
+               class="carousel__slide" title="Télécharger">
+              <img src="assets/galerie/{{YEAR}}/photo-03.jpeg" alt="Oyster House {{YEAR}}" loading="lazy" />
+              <div class="carousel__slide-overlay"></div>
+            </a>
+
+          </div>
+        </div>
+        <button type="button" class="carousel__btn carousel__btn--next" aria-label="Photo suivante">›</button>
+      </div>
+      <p class="carousel__hint">Cliquez sur une photo pour la télécharger · Naviguez avec les flèches</p>
+    </section>
+
+    <!-- ══ NAVIGATION ENTRE ÉDITIONS ══
+         Adapter les liens prev/next selon l'année
+    ══ -->
+    <nav class="edition-nav">
+      <a href="edition-{{PREV}}.html" class="edition-nav__btn edition-nav__btn--prev">← Édition {{PREV}}</a>
+      <a href="index.html#editions" class="edition-nav__all">Toutes les éditions</a>
+      <a href="edition-{{NEXT}}.html" class="edition-nav__btn edition-nav__btn--next">Édition {{NEXT}} →</a>
+    </nav>
+
+  </main>
+
+  <footer class="footer footer--compact">
+    <a href="index.html" class="footer__logo"><img src="assets/logo-oyster-house.png" alt="Oyster House" class="footer__logo-img" /></a>
+    <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
+  </footer>
+
+  <script src="edition.js"></script>
+</body>
+</html>

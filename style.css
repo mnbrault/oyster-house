@@ -366,6 +366,7 @@ a { text-decoration: none; color: inherit; }
 .about__content {
   padding: 100px 80px 100px 80px;
   display: flex; flex-direction: column; gap: 64px;
+  min-width: 0; /* empêche la colonne 1fr de déborder à cause du contenu interne */
 }
 
 .about__lead {

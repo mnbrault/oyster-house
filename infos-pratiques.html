@@ -23,8 +23,9 @@
       position: fixed;
       inset: 0;
       background-image: url('assets/visuel 2 OYSTER HOUSE.jpg');
-      background-size: cover;
-      background-position: center top;
+      background-size: auto 130%;
+      background-position: center -8%;
+      background-repeat: no-repeat;
       z-index: 0;
     }
     /* Léger overlay pour lisibilité du texte */
@@ -64,20 +65,23 @@
     /* ── Contenu ── */
     .page-content {
       position: relative; z-index: 10;
-      padding: 120px 40px 80px;
+      padding: 52vh 40px 80px;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .page-title {
+      position: fixed;
+      top: 80px; left: 40px;
       font-family: 'Sora', sans-serif;
-      font-size: clamp(40px, 6vw, 72px);
+      font-size: clamp(36px, 5vw, 60px);
       font-weight: 800;
       color: #fff;
       letter-spacing: -2px;
       line-height: 1;
-      margin-bottom: 64px;
-      text-shadow: 0 2px 24px rgba(0,80,120,0.18);
+      z-index: 50;
+      text-shadow: 0 2px 24px rgba(0,60,100,0.25);
+      pointer-events: none;
     }
 
     /* ── Grille cartes ── */

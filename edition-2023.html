@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="edition.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css" />
 </head>
 <body>
 
@@ -70,111 +71,77 @@
     </section>
 
     <section class="edition-section">
-      <div class="edition-section__header">
-        <div>
-          <div class="edition-section__label">
-            <span class="edition-section__label-line"></span>
-            <span class="edition-section__label-text">ARCHIVES PHOTO</span>
-          </div>
-          <h2 class="edition-section__title">Photos à télécharger</h2>
-          <p class="edition-section__desc">Cliquez sur une photo pour la télécharger en haute résolution.</p>
-        </div>
+      <div class="edition-section__label">
+        <span class="edition-section__label-line"></span>
+        <span class="edition-section__label-text">ARCHIVES PHOTO</span>
       </div>
+      <h2 class="edition-section__title">Galerie 2023</h2>
+      <p class="edition-section__desc">Cliquez sur une photo pour l'ouvrir en plein écran.</p>
 
-      <div class="carousel" id="carousel2023">
-        <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Photo précédente">‹</button>
-        <div class="carousel__viewport">
-          <div class="carousel__track">
+      <div class="pswp-gallery" id="gallery2023">
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg"
-               download="oyster-house-2023-01.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg" alt="Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg" alt="Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg"
-               download="oyster-house-2023-02.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg" alt="Ambiance Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg" alt="Ambiance Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg"
-               download="oyster-house-2023-03.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg" alt="Festival Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg"
+           data-pswp-width="1280" data-pswp-height="1920">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg" alt="Festival Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg"
-               download="oyster-house-2023-04.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg" alt="Oyster House Carnac 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg" alt="Oyster House Carnac 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg"
-               download="oyster-house-2023-05.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg" alt="Anse du Pô 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg" alt="Anse du Pô 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg"
-               download="oyster-house-2023-06.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg" alt="Concert Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg" alt="Concert Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg"
-               download="oyster-house-2023-07.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg" alt="Festivaliers Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg" alt="Festivaliers Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg"
-               download="oyster-house-2023-08.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg" alt="Soirée Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg" alt="Soirée Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg"
-               download="oyster-house-2023-09.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg" alt="Oyster House Morbihan 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg" alt="Oyster House Morbihan 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg"
-               download="oyster-house-2023-10.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg" alt="DJ Set Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg" alt="DJ Set Oyster House 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg"
-               download="oyster-house-2023-11.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg" alt="Carnac festival 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg" alt="Carnac festival 2023" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg"
-               download="oyster-house-2023-12.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg" alt="Finale Oyster House 2023" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg"
+           data-pswp-width="1920" data-pswp-height="1280">
+          <img src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg" alt="Finale Oyster House 2023" loading="lazy" />
+        </a>
 
-          </div>
-        </div>
-        <button type="button" class="carousel__btn carousel__btn--next" aria-label="Photo suivante">›</button>
       </div>
-      <p class="carousel__hint">12 photos · Cliquez pour télécharger · Naviguez avec les flèches</p>
+      <p class="gallery__hint">12 photos · Cliquez pour ouvrir · Naviguez avec les flèches</p>
     </section>
 
     <nav class="edition-nav">
@@ -190,6 +157,14 @@
     <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
   </footer>
 
-  <script src="edition.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery2023',
+      children: 'a',
+      pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js'),
+    });
+    lightbox.init();
+  </script>
 </body>
 </html>

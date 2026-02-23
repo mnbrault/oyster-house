@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="edition.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css" />
 </head>
 <body>
 
@@ -77,97 +78,67 @@
     </section>
 
     <section class="edition-section">
-      <div class="edition-section__header">
-        <div>
-          <div class="edition-section__label">
-            <span class="edition-section__label-line"></span>
-            <span class="edition-section__label-text">ARCHIVES PHOTO</span>
-          </div>
-          <h2 class="edition-section__title">Photos à télécharger</h2>
-          <p class="edition-section__desc">Cliquez sur une photo pour la télécharger en haute résolution.</p>
-        </div>
+      <div class="edition-section__label">
+        <span class="edition-section__label-line"></span>
+        <span class="edition-section__label-text">ARCHIVES PHOTO</span>
       </div>
+      <h2 class="edition-section__title">Galerie 2020</h2>
+      <p class="edition-section__desc">Cliquez sur une photo pour l'ouvrir en plein écran.</p>
 
-      <div class="carousel" id="carousel2020">
-        <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Photo précédente">‹</button>
-        <div class="carousel__viewport">
-          <div class="carousel__track">
+      <div class="pswp-gallery" id="gallery2020">
 
-            <a href="assets/galerie/editions/2020/54020001.jpg"
-               download="oyster-house-2020-01.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54020001.jpg" alt="Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54020001.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54020001.jpg" alt="Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54020008.jpg"
-               download="oyster-house-2020-02.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54020008.jpg" alt="Ambiance Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54020008.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54020008.jpg" alt="Ambiance Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54020016.jpg"
-               download="oyster-house-2020-03.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54020016.jpg" alt="Festival Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54020016.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54020016.jpg" alt="Festival Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54020024.jpg"
-               download="oyster-house-2020-04.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54020024.jpg" alt="Oyster House Carnac 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54020024.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54020024.jpg" alt="Oyster House Carnac 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54020032.jpg"
-               download="oyster-house-2020-05.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54020032.jpg" alt="Anse du Pô 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54020032.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54020032.jpg" alt="Anse du Pô 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54040002.jpg"
-               download="oyster-house-2020-06.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54040002.jpg" alt="Concert Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54040002.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54040002.jpg" alt="Concert Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54040010.jpg"
-               download="oyster-house-2020-07.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54040010.jpg" alt="Festivaliers Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54040010.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54040010.jpg" alt="Festivaliers Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54040018.jpg"
-               download="oyster-house-2020-08.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54040018.jpg" alt="Soirée Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54040018.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54040018.jpg" alt="Soirée Oyster House 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54040026.jpg"
-               download="oyster-house-2020-09.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54040026.jpg" alt="Oyster House Morbihan 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54040026.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54040026.jpg" alt="Oyster House Morbihan 2020" loading="lazy" />
+        </a>
 
-            <a href="assets/galerie/editions/2020/54040036.jpg"
-               download="oyster-house-2020-10.jpg"
-               class="carousel__slide" title="Télécharger">
-              <img src="assets/galerie/editions/2020/54040036.jpg" alt="Finale Oyster House 2020" loading="lazy" />
-              <div class="carousel__slide-overlay">↓ Télécharger</div>
-            </a>
+        <a href="assets/galerie/editions/2020/54040036.jpg"
+           data-pswp-width="1920" data-pswp-height="1272">
+          <img src="assets/galerie/editions/2020/54040036.jpg" alt="Finale Oyster House 2020" loading="lazy" />
+        </a>
 
-          </div>
-        </div>
-        <button type="button" class="carousel__btn carousel__btn--next" aria-label="Photo suivante">›</button>
       </div>
-      <p class="carousel__hint">10 photos · Cliquez pour télécharger · Naviguez avec les flèches</p>
+      <p class="gallery__hint">10 photos · Cliquez pour ouvrir · Naviguez avec les flèches</p>
     </section>
 
     <nav class="edition-nav">
@@ -183,6 +154,14 @@
     <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
   </footer>
 
-  <script src="edition.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery2020',
+      children: 'a',
+      pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js'),
+    });
+    lightbox.init();
+  </script>
 </body>
 </html>

@@ -620,6 +620,98 @@ a { text-decoration: none; color: inherit; }
 .photos__img-wrap img { transition: transform 0.6s ease; }
 .photos__img-wrap:hover img { transform: scale(1.04); }
 
+/* ─── ACTIVITÉS ──────────────────────────────────────── */
+.activites {
+  background: var(--bg);
+  padding: 140px var(--px) 120px;
+  display: flex; flex-direction: column; gap: 72px;
+}
+
+.activites__top {
+  display: flex; flex-direction: column; gap: 28px;
+  max-width: 640px;
+}
+.activites__title {
+  font-family: var(--font-display); font-size: clamp(52px, 6.5vw, 96px);
+  font-weight: 800; line-height: 0.9; letter-spacing: -3px;
+  color: var(--text-primary);
+}
+.activites__intro {
+  font-size: 17px; line-height: 1.7;
+  color: var(--text-secondary); max-width: 520px;
+}
+
+/* Grille activités */
+.activites__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.activite-card {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  display: flex; flex-direction: column; gap: 14px;
+  transition: background 0.2s, transform 0.2s;
+  border: 1px solid var(--border);
+}
+.activite-card:hover { background: var(--surface-alt); transform: translateY(-2px); }
+
+/* Grande carte concerts — pleine largeur sur 2 colonnes */
+.activite-card--large {
+  grid-column: span 2;
+  flex-direction: row; align-items: flex-start; gap: 40px;
+  background: var(--text-primary); color: #fff;
+  border-color: transparent;
+}
+.activite-card--large:hover { background: #2a2218; }
+.activite-card--large .activite-card__tag { color: rgba(255,255,255,0.5); }
+.activite-card--large .activite-card__name { color: #fff; font-size: clamp(28px, 3vw, 40px); }
+.activite-card--large .activite-card__desc { color: rgba(255,255,255,0.72); }
+
+/* Carte accent — fruits de mer */
+.activite-card--accent {
+  background: var(--accent-teal); color: #fff;
+  border-color: transparent;
+  grid-column: span 2;
+}
+.activite-card--accent:hover { background: var(--pine-blue); }
+.activite-card--accent .activite-card__tag { color: rgba(255,255,255,0.6); }
+.activite-card--accent .activite-card__name { color: #fff; }
+.activite-card--accent .activite-card__desc { color: rgba(255,255,255,0.82); }
+
+.activite-card__tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--text-muted);
+}
+.activite-card__name {
+  font-family: var(--font-display); font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 800; color: var(--text-primary); letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+.activite-card__desc {
+  font-size: 14px; line-height: 1.65; color: var(--text-secondary);
+}
+
+/* Pills */
+.activites__pills {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 10px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  font-size: 13px; font-weight: 500; color: var(--text-secondary);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.pill:hover {
+  background: var(--accent-teal); color: #fff; border-color: var(--accent-teal);
+}
+
 /* ─── ÉDITIONS ───────────────────────────────────────── */
 .editions {
   background: var(--bg-alt);

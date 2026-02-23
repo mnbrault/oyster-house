@@ -18,39 +18,21 @@
       overflow-x: hidden;
     }
 
-    /* ── Fond bleu ciel ── */
+    /* ── Fond photo ── */
     .page-bg {
       position: fixed;
       inset: 0;
-      background:
-        radial-gradient(ellipse 60% 40% at 50% 0%, #87d8f0 0%, transparent 60%),
-        radial-gradient(ellipse 100% 60% at 50% 100%, #c8eef8 0%, transparent 55%),
-        linear-gradient(180deg, #1ea4c8 0%, #2ab5d8 40%, #4dc5e0 100%);
+      background-image: url('assets/visuel 2 OYSTER HOUSE.jpg');
+      background-size: cover;
+      background-position: center top;
       z-index: 0;
     }
-
-    /* Nuages CSS */
-    .cloud {
-      position: fixed;
-      background: rgba(255,255,255,0.82);
-      border-radius: 50%;
-      filter: blur(18px);
-      z-index: 1;
-    }
-    .cloud--1 { width: 420px; height: 120px; bottom: 0; left: -80px; }
-    .cloud--2 { width: 360px; height: 100px; bottom: 20px; right: -60px; }
-    .cloud--3 { width: 240px; height: 70px; bottom: 60px; left: 30%; }
-
-    /* Soleil */
-    .sun {
-      position: fixed;
-      width: 180px; height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 40% 40%, #ffe066, #f9d423 60%, #e8b800);
-      top: 8vh; right: 8vw;
-      z-index: 1;
-      opacity: 0.92;
-      filter: blur(2px);
+    /* Léger overlay pour lisibilité du texte */
+    .page-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 120, 160, 0.18);
     }
 
     /* ── Header ── */
@@ -224,10 +206,6 @@
 
   <!-- Fond -->
   <div class="page-bg"></div>
-  <div class="sun"></div>
-  <div class="cloud cloud--1"></div>
-  <div class="cloud cloud--2"></div>
-  <div class="cloud cloud--3"></div>
 
   <!-- Header -->
   <header class="header">

@@ -653,7 +653,7 @@ a { text-decoration: none; color: inherit; }
 .editions__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 32px;
 }
 
 /* Carte édition : photo plein format + année centrée */

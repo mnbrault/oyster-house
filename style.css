@@ -930,11 +930,22 @@ a { text-decoration: none; color: inherit; }
 .footer__tagline {
   font-size: 13px; line-height: 1.7; color: var(--text-muted);
 }
-.footer__socials { display: flex; gap: 20px; }
+.footer__socials { display: flex; gap: 10px; align-items: center; }
 .footer__social {
-  font-size: 12px; font-weight: 500; color: var(--accent-teal); transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--text-secondary);
+  transition: background 0.2s, color 0.2s;
 }
-.footer__social:hover { color: var(--coral); }
+.footer__social:hover {
+  background: var(--accent-primary);
+  color: #fff;
+}
+.footer__social svg { display: block; flex-shrink: 0; }
 .footer__nav { display: flex; gap: 80px; }
 .footer__col { display: flex; flex-direction: column; gap: 20px; }
 .footer__col-title {

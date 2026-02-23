@@ -608,7 +608,8 @@ a { text-decoration: none; color: inherit; }
 .photos__header {
   display: flex; justify-content: space-between; align-items: flex-end;
 }
-.photos__header-left { display: flex; flex-direction: column; gap: 20px; }
+.photos__header-left { display: flex; flex-direction: column; gap: 20px; max-width: 600px; }
+.photos__intro { font-size: 16px; line-height: 1.7; color: var(--text-secondary); }
 .photos__title {
   font-family: var(--font-display); font-size: clamp(40px, 5vw, 64px);
   font-weight: 800; line-height: 0.95; letter-spacing: -2px;

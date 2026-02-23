@@ -547,6 +547,7 @@ a { text-decoration: none; color: inherit; }
     0 1px 4px rgba(26,22,18,0.06);
 
   transform:
+    translateX(var(--x-off, 0px))
     translateY(calc(60px + var(--y-off, 0px)))
     rotate(var(--rot, 0deg))
     scale(0.92);
@@ -568,6 +569,7 @@ a { text-decoration: none; color: inherit; }
 
 .bounce-card--in {
   transform:
+    translateX(var(--x-off, 0px))
     translateY(var(--y-off, 0px))
     rotate(var(--rot, 0deg))
     scale(1);
@@ -576,6 +578,7 @@ a { text-decoration: none; color: inherit; }
 
 .bounce-card--active {
   transform:
+    translateX(var(--x-off, 0px))
     translateY(calc(var(--y-off, 0px) - 16px))
     rotate(0deg)
     scale(1.06) !important;
@@ -588,8 +591,8 @@ a { text-decoration: none; color: inherit; }
 
 .bounce-card--pushed {
   transform:
+    translateX(calc(var(--x-off, 0px) + var(--push-x, 0px)))
     translateY(var(--y-off, 0px))
-    translateX(var(--push-x, 0px))
     rotate(calc(var(--rot, 0deg) + var(--push-rot, 0deg)))
     scale(0.96) !important;
   opacity: 0.8;

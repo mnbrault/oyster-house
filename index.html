@@ -420,9 +420,10 @@
   <script>
     /* ── BounceCards — vanilla JS (inspired by React/GSAP BounceCards) ── */
     (function () {
-      const ROTATIONS = [-5, -2, 3, 2, -4];    // rotations très faibles — stack serré
-      const DELAYS    = [0, 80, 180, 130, 240]; // ms
-      const Y_OFFSETS = [6, 3, -2, 4, 5];       // px — offset vertical minimal
+      const ROTATIONS = [-6, -3, 0, 3, 6];       // rotation symétrique douce
+      const DELAYS    = [0, 80, 180, 130, 240];   // ms
+      const Y_OFFSETS = [8, 4, 0, 4, 8];          // léger arc vertical
+      const X_OFFSETS = [-80, -40, 0, 40, 80];    // écart horizontal — moins d'overlap
 
       const container = document.getElementById('bounceCards');
       if (!container) return;
@@ -433,6 +434,7 @@
       cards.forEach((card, i) => {
         card.style.setProperty('--rot',   ROTATIONS[i] + 'deg');
         card.style.setProperty('--y-off', Y_OFFSETS[i] + 'px');
+        card.style.setProperty('--x-off', X_OFFSETS[i] + 'px');
         card.style.zIndex = cards.length - i;
       });
 
@@ -474,7 +476,7 @@
             } else {
               const dir  = j < i ? -1 : 1;
               const dist = Math.abs(j - i);
-              c.style.setProperty('--push-x',   (dir * dist * 20) + 'px');
+              c.style.setProperty('--push-x',   (dir * dist * 24) + 'px');
               c.style.setProperty('--push-rot',  (dir * dist * 2) + 'deg');
               c.classList.add('bounce-card--pushed');
               c.style.zIndex = cards.length - j;

@@ -237,13 +237,36 @@
   <!-- ═══ ÉDITIONS — Grille 9 cartes ══════════════════════ -->
   <section class="editions" id="editions">
 
-    <div class="editions__header">
-      <div class="section-label">
-        <span class="section-label__line"></span>
-        <span class="section-label__text">ÉDITIONS</span>
+    <!-- BounceCards hero — titre gauche + cartes droite -->
+    <div class="editions__hero">
+      <div class="editions__hero-left">
+        <div class="section-label">
+          <span class="section-label__line"></span>
+          <span class="section-label__text">ÉDITIONS</span>
+        </div>
+        <h2 class="editions__title">9 éditions,<br>un territoire.</h2>
+        <p class="editions__sub">Depuis 2018, chaque été à l'Anse du Pô. Neuf chapitres d'un même territoire.</p>
       </div>
-      <h2 class="editions__title">9 éditions,<br>un territoire.</h2>
-    </div>
+
+      <!-- BounceCards — cartes empilées animées -->
+      <div class="bounce-cards" id="bounceCards">
+      <div class="bounce-card" data-index="0">
+        <img src="assets/galerie/2022/galerie-coucher-soleil.jpeg" alt="Oyster House — coucher de soleil" />
+      </div>
+      <div class="bounce-card" data-index="1">
+        <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Oyster House — concert" />
+      </div>
+      <div class="bounce-card" data-index="2">
+        <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House — vue aérienne" />
+      </div>
+      <div class="bounce-card" data-index="3">
+        <img src="assets/galerie/2022/galerie-baie.jpeg" alt="Oyster House — baie de Quiberon" />
+      </div>
+      <div class="bounce-card" data-index="4">
+        <img src="assets/galerie/2022/galerie-public-1.jpeg" alt="Oyster House — public" />
+      </div>
+    </div><!-- /bounce-cards -->
+    </div><!-- /editions__hero -->
 
     <div class="editions__grid">
       <a href="edition-2026.html" class="edition-card">
@@ -417,6 +440,84 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    /* ── BounceCards — vanilla JS (inspired by React/GSAP BounceCards) ── */
+    (function () {
+      const ROTATIONS = [-15, -5, 8, 5, -10];
+      const DELAYS    = [0, 80, 180, 130, 240]; // ms
+      const Y_OFFSETS = [18, 8, -4, 10, 14];    // px
+
+      const container = document.getElementById('bounceCards');
+      if (!container) return;
+
+      const cards = Array.from(container.querySelectorAll('.bounce-card'));
+
+      // Applique les custom props CSS sur chaque carte
+      cards.forEach((card, i) => {
+        card.style.setProperty('--rot',   ROTATIONS[i] + 'deg');
+        card.style.setProperty('--y-off', Y_OFFSETS[i] + 'px');
+        card.style.zIndex = cards.length - i;
+      });
+
+      // Lance l'animation d'entrée
+      function animateIn() {
+        cards.forEach((card, i) => {
+          setTimeout(() => card.classList.add('bounce-card--in'), DELAYS[i]);
+        });
+      }
+
+      // IntersectionObserver — gère aussi le cas "déjà visible au chargement"
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateIn();
+            observer.disconnect();
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      observer.observe(container);
+
+      // Si déjà dans le viewport (scroll rapide ou ancre), déclenche quand même
+      setTimeout(() => {
+        const rect = container.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          animateIn();
+          observer.disconnect();
+        }
+      }, 100);
+
+      // ── Hover : card hovered se soulève, les autres sont poussées ──
+      cards.forEach((card, i) => {
+        card.addEventListener('mouseenter', () => {
+          cards.forEach((c, j) => {
+            if (j === i) {
+              c.classList.add('bounce-card--active');
+              c.style.zIndex = 20;
+            } else {
+              const dir  = j < i ? -1 : 1;
+              const dist = Math.abs(j - i);
+              c.style.setProperty('--push-x',   (dir * dist * 32) + 'px');
+              c.style.setProperty('--push-rot',  (dir * dist * 3) + 'deg');
+              c.classList.add('bounce-card--pushed');
+              c.style.zIndex = cards.length - j;
+            }
+          });
+        });
+
+        card.addEventListener('mouseleave', () => {
+          cards.forEach((c, j) => {
+            c.classList.remove('bounce-card--active', 'bounce-card--pushed');
+            c.style.removeProperty('--push-x');
+            c.style.removeProperty('--push-rot');
+            c.style.zIndex = cards.length - j;
+          });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>

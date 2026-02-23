@@ -220,8 +220,8 @@ a { text-decoration: none; color: inherit; }
   border-bottom: 1px solid var(--border);
 }
 .header__logo-img {
-  height: 28px; width: auto; object-fit: contain;
-  filter: brightness(0);   /* logo noir sur fond clair */
+  height: 44px; width: auto; object-fit: contain;
+  mix-blend-mode: multiply;   /* knock out white background */
 }
 .header__nav { display: flex; align-items: center; gap: 8px; }
 .header__cta {
@@ -840,8 +840,8 @@ a { text-decoration: none; color: inherit; }
 }
 .footer__brand { display: flex; flex-direction: column; gap: 24px; max-width: 360px; }
 .footer__logo-img {
-  height: 26px; width: auto; object-fit: contain;
-  filter: brightness(0);
+  height: 40px; width: auto; object-fit: contain;
+  mix-blend-mode: multiply;   /* knock out white background */
 }
 .footer__tagline {
   font-size: 13px; line-height: 1.7; color: var(--text-muted);

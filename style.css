@@ -398,6 +398,28 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.8; color: var(--text-secondary);
 }
 
+/* ── Photo strip section festival ─────────────────────── */
+.about__strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 calc(-1 * var(--px));
+  padding: 0 var(--px);
+}
+.about__strip::-webkit-scrollbar { display: none; }
+.about__strip img {
+  flex: 0 0 auto;
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  display: block;
+}
+
 /* Stats */
 .stats {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
@@ -1016,6 +1038,7 @@ a { text-decoration: none; color: inherit; }
   }
   .about__content { padding: 48px var(--px) 60px; gap: 48px; }
   .about__blocks { grid-template-columns: 1fr; }
+  .about__strip img { height: 220px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
 
   /* Mission */

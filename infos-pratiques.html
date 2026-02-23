@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infos pratiques — Oyster House Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      background: #1ea4c8;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* ── Fond bleu ciel ── */
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%, #87d8f0 0%, transparent 60%),
+        radial-gradient(ellipse 100% 60% at 50% 100%, #c8eef8 0%, transparent 55%),
+        linear-gradient(180deg, #1ea4c8 0%, #2ab5d8 40%, #4dc5e0 100%);
+      z-index: 0;
+    }
+
+    /* Nuages CSS */
+    .cloud {
+      position: fixed;
+      background: rgba(255,255,255,0.82);
+      border-radius: 50%;
+      filter: blur(18px);
+      z-index: 1;
+    }
+    .cloud--1 { width: 420px; height: 120px; bottom: 0; left: -80px; }
+    .cloud--2 { width: 360px; height: 100px; bottom: 20px; right: -60px; }
+    .cloud--3 { width: 240px; height: 70px; bottom: 60px; left: 30%; }
+
+    /* Soleil */
+    .sun {
+      position: fixed;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 40%, #ffe066, #f9d423 60%, #e8b800);
+      top: 8vh; right: 8vw;
+      z-index: 1;
+      opacity: 0.92;
+      filter: blur(2px);
+    }
+
+    /* ── Header ── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 40px;
+    }
+    .header__back {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: #fff;
+      font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 600;
+      letter-spacing: 0.5px;
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 40px;
+      padding: 10px 20px;
+      transition: background 0.2s;
+    }
+    .header__back:hover { background: rgba(255,255,255,0.28); }
+    .header__logo {
+      height: 36px; width: auto;
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      filter: invert(1) brightness(2);
+    }
+
+    /* ── Contenu ── */
+    .page-content {
+      position: relative; z-index: 10;
+      padding: 120px 40px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .page-title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 64px;
+      text-shadow: 0 2px 24px rgba(0,80,120,0.18);
+    }
+
+    /* ── Grille cartes ── */
+    .infos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .info-card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 24px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .info-card:hover {
+      background: rgba(255,255,255,0.22);
+      transform: translateY(-3px);
+    }
+
+    /* Enjoy — accent jaune */
+    .info-card--enjoy {
+      background: rgba(249,212,35,0.22);
+      border-color: rgba(249,212,35,0.45);
+    }
+    .info-card--enjoy:hover { background: rgba(249,212,35,0.30); }
+
+    /* Consommations — span 2 */
+    .info-card--wide {
+      grid-column: span 2;
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+    }
+    .info-card--wide .info-card__body {
+      flex: 1;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+
+    .info-card__icon { font-size: 30px; line-height: 1; }
+
+    .info-card__title {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    .info-card__text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .info-card__list {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 11px;
+      font-size: 14px; line-height: 1.6;
+      color: rgba(255,255,255,0.88);
+    }
+    .info-card__list li {
+      padding-left: 16px;
+      position: relative;
+    }
+    .info-card__list li::before {
+      content: '—';
+      position: absolute; left: 0;
+      color: rgba(255,255,255,0.4);
+    }
+    .info-card__list strong { color: #fff; font-weight: 700; }
+    .info-card__note {
+      font-size: 12px !important;
+      color: rgba(255,255,255,0.45) !important;
+      font-style: italic;
+    }
+
+    /* Badge consommation */
+    .info-card__highlight {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 6px; margin-left: auto;
+      background: rgba(0,0,0,0.20);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 18px;
+      padding: 28px 52px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .info-card__highlight-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+    .info-card__highlight-price {
+      font-family: 'Sora', sans-serif;
+      font-size: 52px; font-weight: 800;
+      color: #fff; line-height: 1;
+    }
+    .info-card__highlight-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      color: #f9d423; text-transform: uppercase;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .infos-grid { grid-template-columns: repeat(2, 1fr); }
+      .info-card--wide { grid-column: span 2; }
+      .sun { width: 120px; height: 120px; }
+    }
+    @media (max-width: 600px) {
+      .page-content { padding: 100px 20px 60px; }
+      .infos-grid { grid-template-columns: 1fr; }
+      .info-card--wide { grid-column: span 1; flex-direction: column; }
+      .info-card--wide .info-card__highlight { margin-left: 0; width: 100%; }
+      .header { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fond -->
+  <div class="page-bg"></div>
+  <div class="sun"></div>
+  <div class="cloud cloud--1"></div>
+  <div class="cloud cloud--2"></div>
+  <div class="cloud cloud--3"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="header__back">
+      ← Retour au festival
+    </a>
+    <img src="assets/logo OH.png" alt="Oyster House" class="header__logo" />
+  </header>
+
+  <!-- Contenu -->
+  <main class="page-content">
+
+    <h1 class="page-title">Infos<br>pratiques.</h1>
+
+    <div class="infos-grid">
+
+      <!-- Enjoy -->
+      <div class="info-card info-card--enjoy">
+        <div class="info-card__icon">☀️</div>
+        <h2 class="info-card__title">Enjoy</h2>
+        <p class="info-card__text">Bienvenue à l'Oyster House. Profitez du festival, de la mer, de la musique et des huîtres — c'est tout ce qu'on vous demande.</p>
+      </div>
+
+      <!-- Respect -->
+      <div class="info-card">
+        <div class="info-card__icon">🤝</div>
+        <h2 class="info-card__title">Respect</h2>
+        <ul class="info-card__list">
+          <li>On célèbre <strong>la diversité</strong> — pas de place pour la discrimination ou le harcèlement.</li>
+          <li>Gardez un œil sur vous et les autres, <strong>signalez</strong> tout ce qui semble louche.</li>
+          <li>Poubelles, cendriers — <strong>pas de mégots dans les coquillages</strong>, ils repartent à la mer.</li>
+          <li><strong>Consentement :</strong> le respect des autres, c'est sacré.</li>
+        </ul>
+      </div>
+
+      <!-- Sécurité -->
+      <div class="info-card">
+        <div class="info-card__icon">🦺</div>
+        <h2 class="info-card__title">Sécurité</h2>
+        <ul class="info-card__list">
+          <li>Éthylotests et gilets jaunes mis à disposition à la sortie.</li>
+          <li>La circulation à pied ou à vélo en état d'ébriété est <strong>interdite par la loi</strong>.</li>
+          <li>La circulation sans gilet jaune sur routes non éclairées est <strong>interdite par la loi</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Parking -->
+      <div class="info-card">
+        <div class="info-card__icon">🚲</div>
+        <h2 class="info-card__title">Parking</h2>
+        <ul class="info-card__list">
+          <li>Parking voiture <strong>à droite de la route en arrivant</strong>.</li>
+          <li>Interdiction de stationner sur le parking public de la plage.</li>
+          <li>Parking à vélo disponible <strong>à l'intérieur de l'évènement</strong>.</li>
+          <li class="info-card__note">L'équipe décline toute responsabilité en cas de dommages ou de vols.</li>
+        </ul>
+      </div>
+
+      <!-- Consommations -->
+      <div class="info-card info-card--wide">
+        <div class="info-card__body">
+          <div class="info-card__icon">🦪</div>
+          <h2 class="info-card__title">Consommations</h2>
+          <p class="info-card__text">Nous travaillons avec des producteurs et artisans locaux pour vous proposer des produits raisonnés et de qualité.</p>
+        </div>
+        <div class="info-card__highlight">
+          <span class="info-card__highlight-label">Bon de consommation</span>
+          <span class="info-card__highlight-price">4 €</span>
+          <span class="info-card__highlight-tag">CASH ONLY</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

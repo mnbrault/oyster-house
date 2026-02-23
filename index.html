@@ -234,10 +234,10 @@
 
   </section>
 
-  <!-- ═══ ÉDITIONS — Grille 9 cartes ══════════════════════ -->
+  <!-- ═══ ÉDITIONS — BounceCards + grille 9 éditions ══════ -->
   <section class="editions" id="editions">
 
-    <!-- BounceCards hero — titre gauche + cartes droite -->
+    <!-- Hero split : titre gauche + bounce cards droite -->
     <div class="editions__hero">
       <div class="editions__hero-left">
         <div class="section-label">
@@ -248,108 +248,83 @@
         <p class="editions__sub">Depuis 2018, chaque été à l'Anse du Pô. Neuf chapitres d'un même territoire.</p>
       </div>
 
-      <!-- BounceCards — cartes empilées animées -->
+      <!-- BounceCards — cartes empilées, rotations faibles -->
       <div class="bounce-cards" id="bounceCards">
-      <div class="bounce-card" data-index="0">
-        <img src="assets/galerie/2022/galerie-coucher-soleil.jpeg" alt="Oyster House — coucher de soleil" />
+        <div class="bounce-card" data-index="0">
+          <img src="assets/galerie/2022/galerie-coucher-soleil.jpeg" alt="Oyster House — coucher de soleil" />
+        </div>
+        <div class="bounce-card" data-index="1">
+          <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Oyster House — concert" />
+        </div>
+        <div class="bounce-card" data-index="2">
+          <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House — vue aérienne" />
+        </div>
+        <div class="bounce-card" data-index="3">
+          <img src="assets/galerie/2022/galerie-baie.jpeg" alt="Oyster House — baie de Quiberon" />
+        </div>
+        <div class="bounce-card" data-index="4">
+          <img src="assets/galerie/2022/galerie-public-1.jpeg" alt="Oyster House — public" />
+        </div>
       </div>
-      <div class="bounce-card" data-index="1">
-        <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Oyster House — concert" />
-      </div>
-      <div class="bounce-card" data-index="2">
-        <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House — vue aérienne" />
-      </div>
-      <div class="bounce-card" data-index="3">
-        <img src="assets/galerie/2022/galerie-baie.jpeg" alt="Oyster House — baie de Quiberon" />
-      </div>
-      <div class="bounce-card" data-index="4">
-        <img src="assets/galerie/2022/galerie-public-1.jpeg" alt="Oyster House — public" />
-      </div>
-    </div><!-- /bounce-cards -->
-    </div><!-- /editions__hero -->
+    </div>
 
+    <!-- Grille 9 éditions — chaque carte avec année centrée -->
     <div class="editions__grid">
-      <a href="edition-2026.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1707991462878-a2caac1fb69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2026" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2026</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2026.html" class="ecard">
+        <img src="https://images.unsplash.com/photo-1707991462878-a2caac1fb69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2026" class="ecard__img" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2026</span>
       </a>
-      <a href="edition-2025.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1759299983112-9b131c96cffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2025" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2025</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2025.html" class="ecard">
+        <img src="https://images.unsplash.com/photo-1759299983112-9b131c96cffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2025" class="ecard__img" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2025</span>
       </a>
-      <a href="edition-2024.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1684325529914-2be4270b5048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2024" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2024</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2024.html" class="ecard">
+        <img src="https://images.unsplash.com/photo-1684325529914-2be4270b5048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2024" class="ecard__img" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2024</span>
       </a>
-      <a href="edition-2023.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1707991462878-a2caac1fb69d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2023" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2023</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2023.html" class="ecard">
+        <img src="assets/galerie/2022/galerie-concert-soir.jpeg" alt="Oyster House 2023" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2023</span>
       </a>
-      <a href="edition-2022.html" class="edition-card edition-card--featured">
-        <div class="edition-card__img">
-          <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House 2022" loading="lazy" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2022</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2022.html" class="ecard ecard--featured">
+        <img src="assets/galerie/2022/galerie-vue-aerienne.jpeg" alt="Oyster House 2022" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2022</span>
       </a>
-      <a href="edition-2021.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1721814734746-9fac2f9cee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2021" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2021</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2021.html" class="ecard">
+        <img src="assets/galerie/2022/galerie-coucher-soleil.jpeg" alt="Oyster House 2021" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2021</span>
       </a>
-      <a href="edition-2020.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1770399883774-4a5ca3e32a7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2020" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2020</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2020.html" class="ecard">
+        <img src="assets/galerie/2022/galerie-baie.jpeg" alt="Oyster House 2020" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2020</span>
       </a>
-      <a href="edition-2019.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1761637949731-be40a0ba9727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2019" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2019</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2019.html" class="ecard">
+        <img src="assets/galerie/2022/galerie-public-1.jpeg" alt="Oyster House 2019" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2019</span>
       </a>
-      <a href="edition-2018.html" class="edition-card">
-        <div class="edition-card__img">
-          <img src="https://images.unsplash.com/photo-1767275737844-b45b21a81d5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600" alt="Oyster House 2018" />
-        </div>
-        <div class="edition-card__footer">
-          <span class="edition-card__year">2018</span>
-          <span class="edition-card__arrow">→</span>
-        </div>
+
+      <a href="edition-2018.html" class="ecard">
+        <img src="assets/galerie/2022/galerie-gastronomie.jpeg" alt="Oyster House 2018" class="ecard__img" loading="lazy" />
+        <div class="ecard__overlay"></div>
+        <span class="ecard__year">2018</span>
       </a>
+
     </div>
 
   </section>
@@ -445,9 +420,9 @@
   <script>
     /* ── BounceCards — vanilla JS (inspired by React/GSAP BounceCards) ── */
     (function () {
-      const ROTATIONS = [-15, -5, 8, 5, -10];
+      const ROTATIONS = [-5, -2, 3, 2, -4];    // rotations très faibles — stack serré
       const DELAYS    = [0, 80, 180, 130, 240]; // ms
-      const Y_OFFSETS = [18, 8, -4, 10, 14];    // px
+      const Y_OFFSETS = [6, 3, -2, 4, 5];       // px — offset vertical minimal
 
       const container = document.getElementById('bounceCards');
       if (!container) return;
@@ -499,8 +474,8 @@
             } else {
               const dir  = j < i ? -1 : 1;
               const dist = Math.abs(j - i);
-              c.style.setProperty('--push-x',   (dir * dist * 32) + 'px');
-              c.style.setProperty('--push-rot',  (dir * dist * 3) + 'deg');
+              c.style.setProperty('--push-x',   (dir * dist * 20) + 'px');
+              c.style.setProperty('--push-rot',  (dir * dist * 2) + 'deg');
               c.classList.add('bounce-card--pushed');
               c.style.zIndex = cards.length - j;
             }

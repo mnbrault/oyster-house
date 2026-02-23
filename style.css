@@ -829,6 +829,87 @@ a { text-decoration: none; color: inherit; }
   border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
 }
 
+/* ─── INFOS PRATIQUES ────────────────────────────────── */
+.infos {
+  background: var(--bg); padding: 120px var(--px);
+  display: flex; flex-direction: column; gap: 64px;
+}
+.infos__title {
+  font-family: var(--font-display); font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800; line-height: 1.1; letter-spacing: -1.5px;
+  color: var(--text-primary);
+}
+.infos__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Cards */
+.info-card {
+  border-radius: var(--radius-xl); padding: 36px 32px;
+  display: flex; flex-direction: column; gap: 20px;
+  position: relative; overflow: hidden;
+}
+.info-card--sky {
+  background: #2a8fc4;
+  color: #fff;
+}
+.info-card--wide {
+  grid-column: span 4;
+  flex-direction: row; align-items: center; gap: 0;
+}
+.info-card__icon {
+  font-size: 28px; line-height: 1;
+}
+.info-card__title {
+  font-family: var(--font-display); font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800; color: #fff; letter-spacing: -0.5px;
+}
+.info-card__text {
+  font-size: 15px; line-height: 1.65; color: rgba(255,255,255,0.88);
+}
+.info-card__list {
+  list-style: none; display: flex; flex-direction: column; gap: 12px;
+  font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.88);
+}
+.info-card__list li { padding-left: 16px; position: relative; }
+.info-card__list li::before {
+  content: '—'; position: absolute; left: 0;
+  color: rgba(255,255,255,0.4);
+}
+.info-card__list strong { color: #fff; font-weight: 700; }
+.info-card__note {
+  font-size: 12px !important; color: rgba(255,255,255,0.5) !important;
+  font-style: italic;
+}
+
+/* Wide card — consommations */
+.info-card--wide .info-card__icon { margin-right: 12px; }
+.info-card--wide .info-card__title { font-size: clamp(26px, 2.5vw, 36px); }
+.info-card--wide .info-card__body {
+  flex: 1; display: flex; flex-direction: column; gap: 16px;
+}
+.info-card--wide .info-card__text { max-width: 480px; }
+.info-card__highlight {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px; margin-left: auto;
+  background: rgba(0,0,0,0.18); border-radius: var(--radius-lg);
+  padding: 32px 56px; text-align: center; flex-shrink: 0;
+}
+.info-card__highlight-label {
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: rgba(255,255,255,0.65);
+}
+.info-card__highlight-price {
+  font-family: var(--font-display); font-size: 48px; font-weight: 800;
+  color: #fff; line-height: 1;
+}
+.info-card__highlight-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  color: #f9d423; text-transform: uppercase;
+}
+
 /* ─── FOOTER ─────────────────────────────────────────── */
 .footer {
   background: var(--surface-alt); display: flex; flex-direction: column;

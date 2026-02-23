@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+assets/.DS_Store
+assets/galerie/.DS_Store
+
+# Grandes archives photos brutes (trop lourdes pour GitHub Pages)
+# Seule assets/galerie/editions/ est trackée (photos sélectionnées)
+assets/galerie/2020/
+assets/galerie/2021/
+assets/galerie/2022/PHOTOS_2022/
+assets/galerie/2022/.DS_Store
+assets/galerie/2023/
+assets/galerie/2024/
+assets/galerie/2025/

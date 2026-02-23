@@ -205,10 +205,12 @@ a { text-decoration: none; color: inherit; }
 
 /* Couleur 1 : Programme — corail */
 .btn-oyster--nav:nth-child(1)::before { background: var(--accent-primary); }
-/* Couleur 2 : Photos — teal */
+/* Couleur 2 : Programme — teal */
 .btn-oyster--nav:nth-child(2)::before { background: var(--accent-teal); }
-/* Couleur 3 : Éditions — tangerine foncé */
+/* Couleur 3 : Éditions — vert forêt */
 .btn-oyster--nav:nth-child(3)::before { background: var(--jungle-green); }
+/* Couleur 4 : Infos — mint vif */
+.btn-oyster--nav:nth-child(4)::before { background: var(--accent-mint); }
 
 /* ─── HEADER ─────────────────────────────────────────── */
 .header {

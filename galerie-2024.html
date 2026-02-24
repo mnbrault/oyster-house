@@ -11,7 +11,6 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 4px;
-      padding: 0;
     }
     .gal__item {
       display: block;
@@ -25,9 +24,7 @@
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    .gal__item:hover img {
-      transform: scale(1.03);
-    }
+    .gal__item:hover img { transform: scale(1.03); }
     .galerie-header {
       padding: 6rem 2rem 2rem;
       text-align: center;
@@ -50,10 +47,10 @@
       font-family: var(--font-body);
       font-size: 13px;
       color: var(--text-muted);
+      margin-bottom: 1rem;
     }
     .galerie-back {
       display: inline-block;
-      margin: 2rem 2rem 0;
       font-family: var(--font-body);
       font-size: 12px;
       letter-spacing: 0.1em;
@@ -65,13 +62,15 @@
   </style>
 </head>
 <body>
-  <header class="nav">
-    <a href="index.html" class="nav__logo">
-      <img src="assets/logo-oyster-house.png" alt="Oyster House" class="nav__logo-img" />
+  <header class="header">
+    <a href="index.html" class="header__logo">
+      <img src="assets/logo-oyster-house.png" alt="Oyster House" class="header__logo-img" />
     </a>
-    <nav class="nav__links">
-      <a href="index.html#editions" class="nav__link">Éditions</a>
-      <a href="infos-pratiques.html" class="nav__link">Infos pratiques</a>
+    <nav class="header__nav">
+      <a href="index.html#programme" class="header__nav-link">Programme</a>
+      <a href="index.html#photos" class="header__nav-link">Photos</a>
+      <a href="index.html#editions" class="header__nav-link">Éditions</a>
+      <a href="index.html#billetterie" class="header__cta">Billetterie →</a>
     </nav>
   </header>
 
@@ -564,10 +563,13 @@
   </main>
 
   <footer class="footer footer--compact">
-    <a href="index.html" class="footer__logo"><img src="assets/logo-oyster-house.png" alt="Oyster House" class="footer__logo-img" /></a>
+    <a href="index.html" class="footer__logo">
+      <img src="assets/logo-oyster-house.png" alt="Oyster House" class="footer__logo-img" />
+    </a>
     <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
   </footer>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css" />
   <script type="module">
     import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
     import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js';
@@ -579,19 +581,18 @@
       bgOpacity: 0.95,
     });
 
-    // Bouton téléchargement dans la lightbox
     lightbox.on('uiRegister', function() {
       lightbox.pswp.ui.registerElement({
         name: 'download-button',
         order: 8,
         isButton: true,
         tagName: 'a',
-        html: '↓',
-        title: 'Télécharger',
+        html: '&#8595;',
+        title: 'Télécharger cette photo',
         onInit: (el, pswp) => {
           el.setAttribute('download', '');
           el.setAttribute('target', '_blank');
-          el.style.cssText = 'font-size:20px;padding:8px 14px;color:#fff;text-decoration:none;';
+          el.style.cssText = 'font-size:22px;padding:8px 14px;color:#fff;text-decoration:none;line-height:1;';
           pswp.on('change', () => {
             el.href = pswp.currSlide.data.src;
           });
@@ -601,6 +602,5 @@
 
     lightbox.init();
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css" />
 </body>
 </html>

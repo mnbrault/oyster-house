@@ -517,3 +517,22 @@
   color: var(--text-muted);
   margin-top: 12px;
 }
+
+.edition-dl-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: var(--gold);
+  color: #080b10;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+.edition-dl-btn:hover {
+  opacity: 0.85;
+}

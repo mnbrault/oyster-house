@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /downloads/
+Disallow: /photos/
+
+Sitemap: https://oysterhouse.fr/sitemap.xml

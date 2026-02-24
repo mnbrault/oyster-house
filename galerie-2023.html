@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie 2023 — Oyster House Festival</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="edition.css" />
+  <style>
+    .gal-full {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 4px;
+      padding: 0;
+    }
+    .gal__item {
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 3/2;
+      background: #111;
+    }
+    .gal__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gal__item:hover img {
+      transform: scale(1.03);
+    }
+    .galerie-header {
+      padding: 6rem 2rem 2rem;
+      text-align: center;
+    }
+    .galerie-header__label {
+      font-family: var(--font-body);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .galerie-header__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      color: var(--text-primary);
+      margin: 0 0 0.5rem;
+    }
+    .galerie-header__count {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .galerie-back {
+      display: inline-block;
+      margin: 2rem 2rem 0;
+      font-family: var(--font-body);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .galerie-back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/logo-oyster-house.png" alt="Oyster House" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links">
+      <a href="index.html#editions" class="nav__link">Éditions</a>
+      <a href="infos-pratiques.html" class="nav__link">Infos pratiques</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="galerie-header">
+      <p class="galerie-header__label">Archives photo</p>
+      <h1 class="galerie-header__title">Oyster House 2023</h1>
+      <p class="galerie-header__count">129 photos · Cliquez pour ouvrir en plein écran</p>
+      <a href="edition-2023.html" class="galerie-back">← Retour à l'édition 2023</a>
+    </div>
+
+    <div class="gal-full" id="gallery-2023">
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-1.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-101.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-101.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-103.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-103.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-105.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-11.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-11.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-117.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-123.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-123.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-125.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-127.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-127.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-129.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-129.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-13.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-131.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-135.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-135.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-141.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-141.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-143.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-143.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-145.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-145.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-147.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-147.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-149.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-149.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-15.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-15.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-151.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-151.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-153.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-153.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-155.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-155.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-157.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-157.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-159.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-159.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-161.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-161.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-163.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-163.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-165.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-165.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-167.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-167.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-17.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-17.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-171.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-173.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-173.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-181.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-181.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-19.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-19.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-193.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-193.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-197.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-197.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-199.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-199.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-201.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-201.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-203.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-203.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-205.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-205.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-207.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-207.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-215.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-215.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-221.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-221.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-223.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-223.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-225.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-225.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-227.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-227.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-229.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-229.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-23.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-23.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-241.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-241.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-245.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-249.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-249.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-25.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-25.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-253.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-253.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-255.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-255.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-257.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-257.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-269.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-269.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-279.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-279.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-285.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-285.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-287.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-287.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-291.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-291.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-295.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-295.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-297.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-297.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-299.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-299.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-3.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-3.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-301.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-301.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-303.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-303.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-305.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-305.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-307.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-307.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-31.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-31.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-311.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-311.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-313.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-313.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-315.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-315.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-317.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-317.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-319.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-323.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-323.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-325.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-325.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-327.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-327.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-329.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-329.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-330.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-330.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-333.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-333.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-335.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-335.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-336.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-336.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-341.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-341.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-344.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-344.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-345.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-345.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-347.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-347.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-349.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-349.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-35.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-351.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-351.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-353.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-353.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-355.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-355.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-357.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-357.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-359.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-359.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-363.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-363.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-364.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-364.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-367.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-367.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-368.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-368.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-369.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-369.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-370.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-370.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-371.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-371.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-372.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-372.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-374.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-374.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-377.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-377.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-379.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-379.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-381.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-381.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-39.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-39.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-390.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-390.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-391.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-391.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-395.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-395.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-399.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-399.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-401.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-401.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-403.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-403.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-43.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-43.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-45.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-45.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-47.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-47.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-49.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-49.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-51.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-51.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-55.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-55.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-61.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-61.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-67.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-67.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-7.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-7.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-73.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-73.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-74.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-75.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-75.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-77.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-77.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-81.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-81.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-85.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-85.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-87.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-87.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-89.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-89.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+      <a href="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg"
+         data-pswp-width="2000" data-pswp-height="1333"
+         class="gal__item">
+        <img src="/photos/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-95.jpg" alt="Oyster House 2023" loading="lazy" />
+      </a>
+    </div>
+
+    <nav class="edition-nav">
+      <a href="galerie-2022.html" class="edition-nav__btn edition-nav__btn--prev">← Galerie 2022</a>
+      <a href="index.html#editions" class="edition-nav__all">Toutes les éditions</a>
+      <a href="galerie-2024.html" class="edition-nav__btn edition-nav__btn--next">Galerie 2024 →</a>
+    </nav>
+  </main>
+
+  <footer class="footer footer--compact">
+    <a href="index.html" class="footer__logo"><img src="assets/logo-oyster-house.png" alt="Oyster House" class="footer__logo-img" /></a>
+    <span class="footer__copy">© 2026 Oyster House · Collectif TRMG · Carnac, Morbihan</span>
+  </footer>
+
+  <script type="module">
+    import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+    import PhotoSwipe from 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery-2023',
+      children: 'a',
+      pswpModule: PhotoSwipe,
+      bgOpacity: 0.95,
+    });
+
+    // Bouton téléchargement dans la lightbox
+    lightbox.on('uiRegister', function() {
+      lightbox.pswp.ui.registerElement({
+        name: 'download-button',
+        order: 8,
+        isButton: true,
+        tagName: 'a',
+        html: '↓',
+        title: 'Télécharger',
+        onInit: (el, pswp) => {
+          el.setAttribute('download', '');
+          el.setAttribute('target', '_blank');
+          el.style.cssText = 'font-size:20px;padding:8px 14px;color:#fff;text-decoration:none;';
+          pswp.on('change', () => {
+            el.href = pswp.currSlide.data.src;
+          });
+        }
+      });
+    });
+
+    lightbox.init();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css" />
+</body>
+</html>

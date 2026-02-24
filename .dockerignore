@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Archives photos brutes (trop lourdes — 9 Go — restent en local)
+assets/galerie/2020/
+assets/galerie/2021/
+assets/galerie/2022/
+assets/galerie/2023/
+assets/galerie/2024/
+assets/galerie/2025/
+
+# Fichiers de dev uniquement
+*.md
+BRIEF.md
+edition-template.html
+1gh

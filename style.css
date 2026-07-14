@@ -767,7 +767,7 @@ a { text-decoration: none; color: inherit; }
   transform: scale(1.08);
 }
 
-/* Édition vedette (2022) — légère teinte corail */
+/* Édition vedette (2026) — légère teinte corail */
 .ecard--featured .ecard__overlay {
   background: linear-gradient(
     to top,
@@ -775,6 +775,10 @@ a { text-decoration: none; color: inherit; }
     rgba(247,113,125,0.1) 50%,
     transparent 100%
   );
+}
+.ecard__img--poster {
+  object-fit: cover;
+  object-position: center top;
 }
 
 /* ancien edition-card — gardé pour compatibilité mais non utilisé */

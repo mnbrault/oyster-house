@@ -167,11 +167,12 @@ html, body {
 }
 
 .slide__kicker {
-  font-family: var(--font-body);
+  font-family: var(--font-title);
   font-size: var(--body-size);
   font-weight: 800;
   color: var(--peach);
   margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .slide__list {
@@ -190,11 +191,40 @@ html, body {
   color: var(--text);
 }
 
+.slide__nowrap {
+  white-space: nowrap;
+}
+
 .slide__list--prices {
   margin-top: 14px;
   gap: 8px;
   font-size: var(--body-size);
   color: var(--muted);
+}
+
+.slide__list--menu {
+  width: 100%;
+  max-width: 34ch;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.2em max-content;
+  column-gap: 0.5em;
+  row-gap: 10px;
+  align-items: baseline;
+}
+
+.slide__list--menu li {
+  display: contents;
+}
+
+.slide__name {
+  text-align: left;
+  min-width: 0;
+}
+
+.slide__dash {
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
 }
 
 .slide__para {
@@ -254,10 +284,10 @@ html, body {
 
 .slide__cash {
   margin-top: 12px;
-  font-family: var(--font-body);
+  font-family: var(--font-title);
   font-size: var(--body-size);
   font-weight: 800;
-  letter-spacing: 1.5px;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: var(--peach);
 }
@@ -297,6 +327,41 @@ html, body {
   line-height: 1;
 }
 
+.slide__cost {
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.slide__list--prices .slide__cost {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.slide__stack--times {
+  display: grid;
+  grid-template-columns: max-content 1.1em max-content;
+  column-gap: 0.45em;
+  row-gap: 12px;
+  align-items: baseline;
+  width: max-content;
+  max-width: 100%;
+}
+
+.slide__stack--times .slide__name {
+  text-align: left;
+}
+
+.slide__stack--times .slide__dash {
+  text-align: center;
+}
+
+.slide__stack--times .slide__time {
+  text-align: left;
+  white-space: nowrap;
+}
+
 .slide--enjoy .slide__content {
   align-items: center;
   justify-content: flex-start;
@@ -311,6 +376,20 @@ html, body {
 
 .slide--welcome .slide__title--brand {
   margin: 0 auto;
+}
+
+.slide--welcome .slide__meta {
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.slide--welcome .slide__meta-col--place {
+  align-self: flex-end;
+  margin-bottom: 6.5em; /* encore plus haut que le bloc horaires */
+}
+
+.slide--welcome .slide__meta-col--times {
+  line-height: 1.55;
 }
 
 /* Terroir / Merroir — centered, airy like last year */
@@ -329,25 +408,30 @@ html, body {
 }
 
 .slide--food .slide__block + .slide__block {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
-.slide--food .slide__title {
-  margin-bottom: 6px;
+.slide--food > .slide__content > .slide__title {
+  margin-bottom: 28px;
 }
 
-.slide--food .slide__kicker {
-  margin-top: 0;
-  margin-bottom: 18px;
+.slide--food .slide__subtitle {
+  font-size: calc(var(--body-size) * 1.4);
+  letter-spacing: -0.5px;
+  color: var(--peach);
+  margin-bottom: 14px;
 }
 
 .slide--food .slide__list {
   gap: 14px;
-  align-items: center;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slide--food .slide__block:last-child .slide__title {
-  margin-bottom: 18px;
+.slide--food .slide__list--menu {
+  max-width: 36ch;
+  row-gap: 14px;
 }
 
 .ui-counter {

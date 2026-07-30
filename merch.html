@@ -208,13 +208,12 @@
       position: relative;
       overflow: hidden;
       border-radius: 4px;
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      opacity: 1;
+      transform: none;
     }
     .lookbook__shot.is-in {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
     /* Tall portrait anchor */
     .lookbook__shot:nth-child(1) {
@@ -652,35 +651,39 @@
     </div>
 
     <div class="lookbook__grid">
-      <figure class="lookbook__shot">
+      <figure class="lookbook__shot is-in">
         <img
-          src="assets/galerie/editions/2022/oyster-house-2022-lookbook-01.jpg"
+          src="assets/galerie/editions/2022/oyster-house-2022-lookbook-01.jpg?v=3"
           alt="Bénévoles Oyster House 2022 en tee-shirts terracotta"
-          loading="lazy"
+          loading="eager"
+          decoding="async"
         />
         <figcaption>2022</figcaption>
       </figure>
-      <figure class="lookbook__shot">
+      <figure class="lookbook__shot is-in">
         <img
-          src="assets/galerie/editions/2022/oyster-house-2022-lookbook-02.jpg"
+          src="assets/galerie/editions/2022/oyster-house-2022-lookbook-02.jpg?v=3"
           alt="Équipe et PEV Oyster House 2022"
-          loading="lazy"
+          loading="eager"
+          decoding="async"
         />
         <figcaption>2022</figcaption>
       </figure>
-      <figure class="lookbook__shot">
+      <figure class="lookbook__shot is-in">
         <img
-          src="assets/galerie/editions/2025/oyster-house-2025-075.jpg"
+          src="assets/galerie/editions/2025/oyster-house-2025-075.jpg?v=3"
           alt="Bénévoles Oyster House 2025"
-          loading="lazy"
+          loading="eager"
+          decoding="async"
         />
         <figcaption>2025</figcaption>
       </figure>
-      <figure class="lookbook__shot">
+      <figure class="lookbook__shot is-in">
         <img
-          src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-145.jpg"
+          src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-145.jpg?v=3"
           alt="Bénévoles Oyster House 2023"
-          loading="lazy"
+          loading="eager"
+          decoding="async"
         />
         <figcaption>2023</figcaption>
       </figure>
@@ -807,6 +810,7 @@
       }, { passive: true });
 
       var shots = document.querySelectorAll('.lookbook__shot');
+      shots.forEach(function (shot) { shot.classList.add('is-in'); });
       if ('IntersectionObserver' in window) {
         var io = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
@@ -815,10 +819,8 @@
               io.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.18 });
+        }, { threshold: 0.05 });
         shots.forEach(function (shot) { io.observe(shot); });
-      } else {
-        shots.forEach(function (shot) { shot.classList.add('is-in'); });
       }
 
       window.addEventListener('message', function (e) {

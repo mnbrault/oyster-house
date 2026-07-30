@@ -291,6 +291,44 @@ html, body {
   margin: 0 auto;
 }
 
+/* Terroir / Merroir — centered, airy like last year */
+.slide--food .slide__content {
+  align-items: center;
+  text-align: center;
+  padding-top: max(64px, calc(env(safe-area-inset-top) + 52px));
+  padding-bottom: max(100px, calc(env(safe-area-inset-bottom) + 88px));
+  gap: 0;
+}
+
+.slide--food .slide__block {
+  margin-top: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.slide--food .slide__block + .slide__block {
+  margin-top: 48px;
+}
+
+.slide--food .slide__title {
+  margin-bottom: 6px;
+}
+
+.slide--food .slide__kicker {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+.slide--food .slide__list {
+  gap: 14px;
+  align-items: center;
+}
+
+.slide--food .slide__block:last-child .slide__title {
+  margin-bottom: 18px;
+}
+
 .ui-counter {
   position: fixed;
   top: max(14px, env(safe-area-inset-top));

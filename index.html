@@ -4,27 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="assets/logo OH.png" />
-  <title>Oyster House Festival — Carnac, Morbihan</title>
-  <meta name="description" content="Oyster House est un festival de musique électronique intimiste à Carnac, dans le Morbihan. 9ème édition le 1er août 2026 — Pitaya Soundsystem, Housekeeping, Lagauth, Lazerg. Billetterie ouverte." />
+  <title>Oyster House Festival - Carnac, Morbihan</title>
+  <meta name="description" content="Oyster House est un festival de musique électronique intimiste à Carnac, dans le Morbihan. 9ème édition le 1er août 2026 - Pitaya Soundsystem, Housekeeping, Lagauth, Lazerg. Billetterie ouverte." />
   <meta name="keywords" content="festival musique Carnac, Morbihan, Oyster House, électronique, Bretagne, festival été" />
   <meta name="robots" content="index, follow" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Oyster House Festival" />
-  <meta property="og:title" content="Oyster House Festival — Carnac, Morbihan" />
+  <meta property="og:title" content="Oyster House Festival - Carnac, Morbihan" />
   <meta property="og:description" content="9ème édition le 1er août 2026 à Carnac. Pitaya Soundsystem, Housekeeping, Lagauth, Lazerg. Billetterie ouverte." />
   <meta property="og:image" content="https://oysterhouse.fr/assets/affiche-oyster-house-2026.jpg" />
   <meta property="og:url" content="https://oysterhouse.fr" />
   <meta property="og:locale" content="fr_FR" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Oyster House Festival — Carnac, Morbihan" />
+  <meta name="twitter:title" content="Oyster House Festival - Carnac, Morbihan" />
   <meta name="twitter:description" content="Festival de musique électronique intimiste à Carnac, dans le Morbihan." />
   <meta name="twitter:image" content="https://oysterhouse.fr/assets/galerie/editions/2025/oyster-house-2025-055.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="oyster-player.css" />
+  <script src="oyster-player.js"></script>
 </head>
 <body>
 
@@ -43,6 +45,10 @@
         <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
         <span class="btn-oyster__label">Éditions</span>
       </a>
+      <a href="merch.html" class="btn-oyster btn-oyster--nav">
+        <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
+        <span class="btn-oyster__label">Merch</span>
+      </a>
       <a href="infos-pratiques.html" class="btn-oyster btn-oyster--nav">
         <img src="assets/logo-huître.png" class="btn-oyster__shell" alt="" aria-hidden="true" />
         <span class="btn-oyster__label">Infos</span>
@@ -50,7 +56,7 @@
     </nav>
   </header>
 
-  <!-- ═══ HERO — Grille fragmentée ════════════════════════ -->
+  <!-- ═══ HERO - Grille fragmentée ════════════════════════ -->
   <section class="hero">
 
     <!-- Bloc A : Grand titre collé à gauche, sticky -->
@@ -60,12 +66,12 @@
         <span class="hero__title-line">OYSTER</span>
         <span class="hero__title-line hero__title-line--indent">HOUSE</span>
       </h1>
-      <p class="hero__edition">9<sup>ème</sup> édition — 1<sup>er</sup> août 2026</p>
+      <p class="hero__edition">9<sup>ème</sup> édition - 1<sup>er</sup> août 2026</p>
     </div>
 
     <!-- Bloc B : Photo principale plein cadre -->
     <div class="hero__block hero__block--img-main">
-      <img src="assets/hero-OH-2019.png" alt="Vue aérienne Oyster House — festival au coucher de soleil, L'Anse du Pô" />
+      <img src="assets/hero-OH-2019.png" alt="Vue aérienne Oyster House - festival au coucher de soleil, L'Anse du Pô" />
     </div>
 
     <!-- Bloc C : Accroche + date + CTA -->
@@ -94,7 +100,7 @@
 
   </section>
 
-  <!-- ═══ PRÉSENTATION — Layout éditorial sticky ══════════ -->
+  <!-- ═══ PRÉSENTATION - Layout éditorial sticky ══════════ -->
   <section class="about" id="about">
 
     <div class="about__sticky">
@@ -109,7 +115,7 @@
     <div class="about__content">
 
       <p class="about__lead">
-        Chaque année depuis 2018, nous investissons l'Anse du Pô — un spot de renommée mondiale pour les sports de glisse, niché au cœur de la Baie de Quiberon. Un lieu chargé d'histoire, de vent et d'iode, où les huîtres poussent lentement dans une eau d'exception.
+        Chaque année depuis 2018, nous investissons l'Anse du Pô - un spot de renommée mondiale pour les sports de glisse, niché au cœur de la Baie de Quiberon. Un lieu chargé d'histoire, de vent et d'iode, où les huîtres poussent lentement dans une eau d'exception.
       </p>
 
       <div class="about__blocks">
@@ -127,7 +133,7 @@
         </div>
         <div class="about-block">
           <h3 class="about-block__title">La scénographie</h3>
-          <p class="about-block__text">Chaque édition, nous confions la scénographie à des artistes et artisans locaux — cordages, bois de bateau, filets, balisage, caisseries ostréicoles. Ce qui aurait fini en déchets devient décor, lumière, installation.</p>
+          <p class="about-block__text">Chaque édition, nous confions la scénographie à des artistes et artisans locaux - cordages, bois de bateau, filets, balisage, caisseries ostréicoles. Ce qui aurait fini en déchets devient décor, lumière, installation.</p>
         </div>
       </div>
 
@@ -155,7 +161,7 @@
     </div>
   </section>
 
-  <!-- ═══ MISSION — Pleine largeur typographique ══════════ -->
+  <!-- ═══ MISSION - Pleine largeur typographique ══════════ -->
   <section class="mission" id="mission">
 
     <div class="mission__top">
@@ -170,10 +176,10 @@
 
       <div class="mission__body">
         <p class="mission__p">Pas par hasard qu'on s'appelle Oyster House. L'huître, c'est le symbole de ce territoire, de ceux qui y vivent, de ceux qui y travaillent. Et franchement, elle le mérite.</p>
-        <p class="mission__p">Ce petit coquillage filtre jusqu'à 200 litres d'eau par jour. Elle absorbe l'azote, piège les microplastiques, régule les écosystèmes côtiers. Discrète, efficace, essentielle — un peu comme les ostréiculteurs qui en prennent soin.</p>
-        <p class="mission__p">La mer, on y passe la majeure partie de notre temps. On la surfe, on la navigue, on s'y baigne. Elle nous fait vibrer, elle nous ressource, elle nous définit. Elle nourrit l'âme autant que l'esprit. Elle nous a inspirés — et c'est ce qu'on a envie de vous transmettre.</p>
+        <p class="mission__p">Ce petit coquillage filtre jusqu'à 200 litres d'eau par jour. Elle absorbe l'azote, piège les microplastiques, régule les écosystèmes côtiers. Discrète, efficace, essentielle - un peu comme les ostréiculteurs qui en prennent soin.</p>
+        <p class="mission__p">La mer, on y passe la majeure partie de notre temps. On la surfe, on la navigue, on s'y baigne. Elle nous fait vibrer, elle nous ressource, elle nous définit. Elle nourrit l'âme autant que l'esprit. Elle nous a inspirés - et c'est ce qu'on a envie de vous transmettre.</p>
         <p class="mission__p">Alors on fait attention à elle. Pas parce qu'on nous l'a demandé. Parce qu'on l'aime.</p>
-        <p class="mission__p">Sauf que ni l'huître ni les ostréiculteurs ne font beaucoup de bruit. Acidification des eaux, pression démographique, agents pathogènes — des défis réels, souvent invisibles depuis la côte.</p>
+        <p class="mission__p">Sauf que ni l'huître ni les ostréiculteurs ne font beaucoup de bruit. Acidification des eaux, pression démographique, agents pathogènes - des défis réels, souvent invisibles depuis la côte.</p>
         <p class="mission__p mission__p--coda">Oyster House, c'est leur donner une scène.</p>
 
         <div class="mission__stats">
@@ -197,17 +203,17 @@
 
         <div class="pillars">
           <div class="pillar">
-            <span class="pillar__num">01 —</span>
+            <span class="pillar__num">01 -</span>
             <h3 class="pillar__title">Environnemental</h3>
             <p class="pillar__desc">Les coquillages filtrent l'eau, régulent nos littoraux et maintiennent l'équilibre naturel des côtes bretonnes.</p>
           </div>
           <div class="pillar">
-            <span class="pillar__num">02 —</span>
+            <span class="pillar__num">02 -</span>
             <h3 class="pillar__title">Économique &amp; Social</h3>
-            <p class="pillar__desc">320 entreprises, 4 000 emplois, 50 M€ de chiffre d'affaires — un tissu vivant, ancré dans le territoire depuis des générations.</p>
+            <p class="pillar__desc">320 entreprises, 4 000 emplois, 50 M€ de chiffre d'affaires - un tissu vivant, ancré dans le territoire depuis des générations.</p>
           </div>
           <div class="pillar">
-            <span class="pillar__num">03 —</span>
+            <span class="pillar__num">03 -</span>
             <h3 class="pillar__title">Culturel</h3>
             <p class="pillar__desc">Depuis les mégalithes de Carnac, les coquillages font partie du paysage. On est là pour que ça continue.</p>
           </div>
@@ -219,7 +225,7 @@
 
   </section>
 
-  <!-- ═══ PHOTOS — Grille éditoriale masonry ═══════════════ -->
+  <!-- ═══ PHOTOS - Grille éditoriale masonry ═══════════════ -->
   <section class="photos" id="photos">
 
     <div class="photos__header">
@@ -229,22 +235,22 @@
           <span class="section-label__text">LE PROGRAMME</span>
         </div>
         <h2 class="photos__title">Une fête,<br>une journée entière</h2>
-        <p class="photos__intro">De la marée basse au coucher de soleil, l'Oyster House c'est 12 heures où tout le monde trouve son rythme. Concerts, sport, mer, table — un festival où chaque heure a sa saveur.</p>
+        <p class="photos__intro">De la marée basse au coucher de soleil, l'Oyster House c'est 12 heures où tout le monde trouve son rythme. Concerts, sport, mer, table - un festival où chaque heure a sa saveur.</p>
       </div>
     </div>
 
     <div class="photos__grid">
       <div class="photos__col">
         <div class="photos__img-wrap" style="height: 360px;">
-          <img src="assets/galerie/editions/2025/oyster-house-2025-095.jpg" alt="Homards — gastronomie maritime Oyster House" loading="lazy" />
+          <img src="assets/galerie/editions/2025/oyster-house-2025-095.jpg" alt="Homards - gastronomie maritime Oyster House" loading="lazy" />
         </div>
         <div class="photos__img-wrap" style="height: 220px;">
-          <img src="assets/galerie/editions/2024/010-Oysterhouse-2024-YA5_8361.jpg" alt="Activité volley — Oyster House" loading="lazy" />
+          <img src="assets/galerie/editions/2024/010-Oysterhouse-2024-YA5_8361.jpg" alt="Activité volley - Oyster House" loading="lazy" />
         </div>
       </div>
       <div class="photos__col">
         <div class="photos__img-wrap" style="height: 220px;">
-          <img src="assets/galerie/editions/2025/oyster-house-2025-110.jpg" alt="DJ set — musiciens Oyster House 2025" loading="lazy" />
+          <img src="assets/galerie/editions/2025/oyster-house-2025-110.jpg" alt="DJ set - musiciens Oyster House 2025" loading="lazy" />
         </div>
         <div class="photos__img-wrap" style="height: 360px;">
           <img src="assets/galerie/editions/2025/oyster-house-2025-055.jpg" alt="L'équipe Oyster House 2025" loading="lazy" />
@@ -252,17 +258,17 @@
       </div>
       <div class="photos__col">
         <div class="photos__img-wrap" style="height: 290px;">
-          <img src="assets/galerie/editions/2024/065-Oysterhouse-2024-YA5_8626.jpg" alt="Ambiance festival — Oyster House" loading="lazy" />
+          <img src="assets/galerie/editions/2024/065-Oysterhouse-2024-YA5_8626.jpg" alt="Ambiance festival - Oyster House" loading="lazy" />
         </div>
         <div class="photos__img-wrap" style="height: 290px;">
-          <img src="assets/galerie/editions/2024/030-Oysterhouse-2024-YA5_8457.jpg" alt="Windsurf — Anse du Pô" loading="lazy" />
+          <img src="assets/galerie/editions/2024/030-Oysterhouse-2024-YA5_8457.jpg" alt="Windsurf - Anse du Pô" loading="lazy" />
         </div>
       </div>
     </div>
 
   </section>
 
-  <!-- ═══ ÉDITIONS — BounceCards + grille 8 éditions ══════ -->
+  <!-- ═══ ÉDITIONS - BounceCards + grille 8 éditions ══════ -->
   <section class="editions" id="editions">
 
     <!-- Hero split : titre gauche + bounce cards droite -->
@@ -276,31 +282,31 @@
         <p class="editions__sub">Depuis 2018, chaque été à la Pointe du Pô. Neuf chapitres d'un même spot.</p>
       </div>
 
-      <!-- BounceCards — cartes empilées, rotations faibles -->
+      <!-- BounceCards - cartes empilées, rotations faibles -->
       <div class="bounce-cards" id="bounceCards">
         <div class="bounce-card" data-index="0">
-          <img src="assets/galerie/editions/2022/oyster-house-2022-0113.jpg" alt="Oyster House — coucher de soleil" />
+          <img src="assets/galerie/editions/2022/oyster-house-2022-0113.jpg" alt="Oyster House - coucher de soleil" />
         </div>
         <div class="bounce-card" data-index="1">
-          <img src="assets/galerie/editions/2022/oyster-house-2022-0060.jpg" alt="Oyster House — concert" />
+          <img src="assets/galerie/editions/2022/oyster-house-2022-0060.jpg" alt="Oyster House - concert" />
         </div>
         <div class="bounce-card" data-index="2">
-          <img src="assets/galerie/editions/2022/oyster-house-2022-0022.jpg" alt="Oyster House — vue aérienne" />
+          <img src="assets/galerie/editions/2022/oyster-house-2022-0022.jpg" alt="Oyster House - vue aérienne" />
         </div>
         <div class="bounce-card" data-index="3">
-          <img src="assets/galerie/editions/2022/oyster-house-2022-0034.jpg" alt="Oyster House — baie de Quiberon" />
+          <img src="assets/galerie/editions/2022/oyster-house-2022-0034.jpg" alt="Oyster House - baie de Quiberon" />
         </div>
         <div class="bounce-card" data-index="4">
-          <img src="assets/galerie/editions/2022/oyster-house-2022-0086.jpg" alt="Oyster House — public" />
+          <img src="assets/galerie/editions/2022/oyster-house-2022-0086.jpg" alt="Oyster House - public" />
         </div>
       </div>
     </div>
 
-    <!-- Grille 9 éditions — chaque carte avec année centrée -->
+    <!-- Grille 9 éditions - chaque carte avec année centrée -->
     <div class="editions__grid">
 
       <a href="edition-2026.html" class="ecard ecard--featured">
-        <img src="assets/affiche-oyster-house-2026.jpg" alt="Oyster House 2026 — affiche officielle" class="ecard__img ecard__img--poster" loading="lazy" />
+        <img src="assets/affiche-oyster-house-2026.jpg" alt="Oyster House 2026 - affiche officielle" class="ecard__img ecard__img--poster" loading="lazy" />
         <div class="ecard__overlay"></div>
         <span class="ecard__year">2026</span>
       </a>
@@ -357,11 +363,11 @@
 
   </section>
 
-  <!-- ═══ PROGRAMME — Split photo / texte ════════════════ -->
+  <!-- ═══ PROGRAMME - Split photo / texte ════════════════ -->
   <section class="programme" id="programme">
 
     <div class="programme__img-wrap">
-      <img src="assets/galerie/editions/2022/oyster-house-2022-0060.jpg" alt="Scène Oyster House 2022 — concert au coucher de soleil" class="programme__img" />
+      <img src="assets/galerie/editions/2022/oyster-house-2022-0060.jpg" alt="Scène Oyster House 2022 - concert au coucher de soleil" class="programme__img" />
     </div>
 
     <div class="programme__content">
@@ -371,7 +377,7 @@
       </div>
       <h2 class="programme__title">Douze<br>heures.<br>Un territoire.</h2>
       <p class="programme__desc">
-        Musique live, artistes locaux, scénographie éphémère. Gastronomie maritime — huîtres, homards, produits locaux. Artisans, pêcheurs, conchyliculteurs. Wing et windsurf welcome.
+        Musique live, artistes locaux, scénographie éphémère. Gastronomie maritime - huîtres, homards, produits locaux. Artisans, pêcheurs, conchyliculteurs. Wing et windsurf welcome.
       </p>
       <div class="programme__tags">
         <span class="tag">Musique live</span>
@@ -384,7 +390,7 @@
 
   </section>
 
-  <!-- ═══ TICKETS — Pleine largeur, fond doré ═════════════ -->
+  <!-- ═══ TICKETS - Pleine largeur, fond doré ═════════════ -->
   <section class="tickets" id="billetterie">
     <div class="tickets__inner">
       <div class="section-label section-label--dark">
@@ -392,7 +398,7 @@
         <span class="section-label__text section-label__text--dark">BILLETTERIE</span>
       </div>
       <h2 class="tickets__title">Prenez<br>votre place.</h2>
-      <p class="tickets__sub">9ème édition — samedi 1<sup>er</sup> août 2026, 14h–00h. Pointe du Pô, Carnac. Huîtres, musique et marées — rejoignez le mouvement.</p>
+      <p class="tickets__sub">9ème édition - samedi 1<sup>er</sup> août 2026, 14h-00h. Pointe du Pô, Carnac. Huîtres, musique et marées - rejoignez le mouvement.</p>
       <div class="tickets__cta-row">
         <a href="https://yp.events/384b734f-0b39-4bb5-9aa0-a7240831cf6d/Oyster-House-Carnac-2026" class="btn btn--dark" target="_blank" rel="noopener noreferrer">Acheter mes billets</a>
         <span class="tickets__date">1<sup>er</sup> août 2026 · Pointe du Pô · Carnac</span>
@@ -440,6 +446,7 @@
         <div class="footer__col">
           <span class="footer__col-title">PRATIQUE</span>
           <a href="https://yp.events/384b734f-0b39-4bb5-9aa0-a7240831cf6d/Oyster-House-Carnac-2026" class="footer__link" target="_blank" rel="noopener noreferrer">Billetterie</a>
+          <a href="merch.html" class="footer__link">Merch</a>
           <a href="#editions" class="footer__link">Photos à télécharger</a>
           <a href="#mission" class="footer__link">Notre engagement</a>
           <a href="mailto:oysterhousecarnac@gmail.com" class="footer__link">Contact</a>
@@ -458,12 +465,12 @@
 
 
   <script>
-    /* ── BounceCards — vanilla JS (inspired by React/GSAP BounceCards) ── */
+    /* ── BounceCards - vanilla JS (inspired by React/GSAP BounceCards) ── */
     (function () {
       const ROTATIONS = [-6, -3, 0, 3, 6];       // rotation symétrique douce
       const DELAYS    = [0, 80, 180, 130, 240];   // ms
       const Y_OFFSETS = [8, 4, 0, 4, 8];          // léger arc vertical
-      const X_OFFSETS = [-80, -40, 0, 40, 80];    // écart horizontal — moins d'overlap
+      const X_OFFSETS = [-80, -40, 0, 40, 80];    // écart horizontal - moins d'overlap
 
       const container = document.getElementById('bounceCards');
       if (!container) return;
@@ -485,7 +492,7 @@
         });
       }
 
-      // IntersectionObserver — gère aussi le cas "déjà visible au chargement"
+      // IntersectionObserver - gère aussi le cas "déjà visible au chargement"
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {

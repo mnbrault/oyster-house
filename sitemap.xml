@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://oysterhouse.fr/merch.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://oysterhouse.fr/edition-2025.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

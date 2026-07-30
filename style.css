@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   OYSTER HOUSE — Design System
+   OYSTER HOUSE - Design System
    Collectif TRMG · Carnac, Morbihan · Est. 2018
    ═══════════════════════════════════════════════════════ */
 
@@ -27,7 +27,7 @@
   --surface-alt:  #d9cfc4;
   --border:       #d4c8bc;
 
-  --text-primary:   #1a2e2c;   /* dark pine (palette) — remplace le noir */
+  --text-primary:   #1a2e2c;   /* dark pine (palette) - remplace le noir */
   --text-secondary: #3d5349;
   --text-muted:     #5c7268;
 
@@ -44,11 +44,11 @@
   --pine-blue:        #377771;
 
   /* Rôles sémantiques */
-  --accent-primary:   #f7717d;   /* corail vif — CTA, highlights   */
-  --accent-secondary: #ffaf87;   /* tangerine — accents doux       */
-  --accent-green:     #3bb273;   /* vert forêt — badges nature     */
-  --accent-teal:      #377771;   /* pin bleu   — labels, liens     */
-  --accent-mint:      #4ce0b3;   /* mint       — hover vert        */
+  --accent-primary:   #f7717d;   /* corail vif - CTA, highlights   */
+  --accent-secondary: #ffaf87;   /* tangerine - accents doux       */
+  --accent-green:     #3bb273;   /* vert forêt - badges nature     */
+  --accent-teal:      #377771;   /* pin bleu   - labels, liens     */
+  --accent-mint:      #4ce0b3;   /* mint       - hover vert        */
 
   /* aliases legacy */
   --coral:  #f7717d;
@@ -121,7 +121,7 @@ a { text-decoration: none; color: inherit; }
 /* ─── BOUTON HUÎTRE ──────────────────────────────────── */
 /*
   Technique : l'image gravure B&W est affichée par-dessus un fond coloré
-  avec mix-blend-mode: multiply — le blanc devient transparent,
+  avec mix-blend-mode: multiply - le blanc devient transparent,
   les lignes noires de la gravure se mélangent à la couleur du fond.
   Résultat : la coquille gravée colorée sur fond transparent.
 */
@@ -136,7 +136,7 @@ a { text-decoration: none; color: inherit; }
   text-decoration: none;
   flex-shrink: 0;
   transition: transform 0.35s ease;
-  /* fond transparent — la couleur vient du ::before */
+  /* fond transparent - la couleur vient du ::before */
   background: transparent;
 }
 .btn-oyster:hover { transform: scale(1.08) rotate(3deg); }
@@ -183,7 +183,7 @@ a { text-decoration: none; color: inherit; }
 }
 .btn-oyster--dark .btn-oyster__label { color: var(--bg); }
 
-/* ─── Variante NAV — huître centrée, texte par-dessus ── */
+/* ─── Variante NAV - huître centrée, texte par-dessus ── */
 .btn-oyster--nav {
   width: 140px;
   height: 44px;
@@ -219,13 +219,13 @@ a { text-decoration: none; color: inherit; }
   text-transform: uppercase;
 }
 
-/* Couleur 1 : Programme — corail */
+/* Couleur 1 : Programme - corail */
 .btn-oyster--nav:nth-child(1)::before { background: var(--accent-primary); }
-/* Couleur 2 : Programme — teal */
+/* Couleur 2 : Éditions - teal */
 .btn-oyster--nav:nth-child(2)::before { background: var(--accent-teal); }
-/* Couleur 3 : Éditions — vert forêt */
+/* Couleur 3 : Merch - vert forêt */
 .btn-oyster--nav:nth-child(3)::before { background: var(--jungle-green); }
-/* Couleur 4 : Infos — mint vif */
+/* Couleur 4 : Infos - mint vif */
 .btn-oyster--nav:nth-child(4)::before { background: var(--accent-mint); }
 
 /* ─── HEADER ─────────────────────────────────────────── */
@@ -261,7 +261,7 @@ a { text-decoration: none; color: inherit; }
   gap: 12px;
 }
 
-/* Bloc A — Grand titre */
+/* Bloc A - Grand titre */
 .hero__block--title {
   grid-column: 1;
   grid-row: 1 / 3;
@@ -288,7 +288,7 @@ a { text-decoration: none; color: inherit; }
 }
 .hero__edition sup { font-size: 9px; }
 
-/* Bloc B — Photo principale */
+/* Bloc B - Photo principale */
 .hero__block--img-main {
   grid-column: 2;
   grid-row: 1;
@@ -299,7 +299,7 @@ a { text-decoration: none; color: inherit; }
 .hero__block--img-main img { transition: transform 6s ease; }
 .hero__block--img-main:hover img { transform: scale(1.04); }
 
-/* Bloc C — Info + CTA */
+/* Bloc C - Info + CTA */
 .hero__block--info {
   grid-column: 3;
   grid-row: 1;
@@ -320,7 +320,7 @@ a { text-decoration: none; color: inherit; }
 }
 .hero__meta-sep { color: var(--border); }
 
-/* Bloc D — Photo portrait */
+/* Bloc D - Photo portrait */
 .hero__block--img-portrait {
   grid-column: 2;
   grid-row: 2;
@@ -331,7 +331,7 @@ a { text-decoration: none; color: inherit; }
 .hero__block--img-portrait img { transition: transform 6s ease; }
 .hero__block--img-portrait:hover img { transform: scale(1.04); }
 
-/* Bloc E — Stat */
+/* Bloc E - Stat */
 .hero__block--stat {
   grid-column: 3;
   grid-row: 2;
@@ -349,7 +349,7 @@ a { text-decoration: none; color: inherit; }
   color: rgba(255,255,255,0.65); max-width: 180px; line-height: 1.5;
 }
 
-/* ─── ABOUT — Sticky left + scroll right ────────────── */
+/* ─── ABOUT - Sticky left + scroll right ────────────── */
 .about {
   display: grid;
   grid-template-columns: 380px 1fr;
@@ -703,7 +703,7 @@ a { text-decoration: none; color: inherit; }
   line-height: 1.7; color: var(--text-muted); max-width: 340px;
 }
 
-/* ── Grille 9 éditions — ecard ── */
+/* ── Grille 9 éditions - ecard ── */
 .editions__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -767,7 +767,7 @@ a { text-decoration: none; color: inherit; }
   transform: scale(1.08);
 }
 
-/* Édition vedette (2026) — légère teinte corail */
+/* Édition vedette (2026) - légère teinte corail */
 .ecard--featured .ecard__overlay {
   background: linear-gradient(
     to top,
@@ -781,7 +781,7 @@ a { text-decoration: none; color: inherit; }
   object-position: center top;
 }
 
-/* ancien edition-card — gardé pour compatibilité mais non utilisé */
+/* ancien edition-card - gardé pour compatibilité mais non utilisé */
 .edition-card {
   display: flex; flex-direction: column;
   text-decoration: none; color: inherit;
@@ -930,7 +930,7 @@ a { text-decoration: none; color: inherit; }
 }
 .info-card__list li { padding-left: 16px; position: relative; }
 .info-card__list li::before {
-  content: '—'; position: absolute; left: 0;
+  content: '-'; position: absolute; left: 0;
   color: rgba(255,255,255,0.4);
 }
 .info-card__list strong { color: #fff; font-weight: 700; }
@@ -939,7 +939,7 @@ a { text-decoration: none; color: inherit; }
   font-style: italic;
 }
 
-/* Wide card — consommations */
+/* Wide card - consommations */
 .info-card--wide .info-card__icon { margin-right: 12px; }
 .info-card--wide .info-card__title { font-size: clamp(26px, 2.5vw, 36px); }
 .info-card--wide .info-card__body {
@@ -1030,7 +1030,7 @@ a { text-decoration: none; color: inherit; }
   .btn-oyster--nav { width: 110px; height: 40px; }
   .btn-oyster--nav .btn-oyster__label { font-size: 11px; }
 
-  /* Hero — grille 2 colonnes */
+  /* Hero - grille 2 colonnes */
   .hero {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -1141,7 +1141,7 @@ a { text-decoration: none; color: inherit; }
     height: 140%;
   }
 
-  /* Hero — une colonne */
+  /* Hero - une colonne */
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
@@ -1294,7 +1294,7 @@ a { text-decoration: none; color: inherit; }
   .bounce-cards { height: 200px; }
   .bounce-card { width: 130px; height: 165px; }
 
-  /* Mission — très petit mobile */
+  /* Mission - très petit mobile */
   .mission { padding: 36px var(--px); gap: 24px; }
   .mission__top { gap: 24px; }
   .mission__title { font-size: clamp(32px, 10vw, 44px); }

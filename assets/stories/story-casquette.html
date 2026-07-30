@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Story - Casquette Crème Vintage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Sao Torpes';
+      src: url('../fonts/SaoTorpes.otf') format('opentype');
+      font-display: block;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { width: 1080px; height: 1920px; overflow: hidden; background: #f2ccc3; }
+    .story {
+      width: 1080px;
+      height: 1920px;
+      padding: 48px 0 0;
+      background: #f2ccc3;
+      color: #1a4a46;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title {
+      font-family: 'Sao Torpes', 'Sora', sans-serif;
+      font-size: 92px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 0.92;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      padding: 0 36px;
+      flex: 0 0 auto;
+    }
+    .visual {
+      width: 1080px;
+      height: 1380px;
+      flex: 0 0 1380px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .visual img {
+      height: 980px;
+      width: auto;
+      max-width: 900px;
+      object-fit: contain;
+      filter: drop-shadow(0 28px 40px rgba(60,30,20,0.22));
+    }
+    .link-zone {
+      margin-top: auto;
+      width: 100%;
+      height: 140px;
+      flex: 0 0 140px;
+    }
+  </style>
+</head>
+<body>
+  <div class="story">
+    <h1 class="title">Casquette<br>Crème<br>Vintage</h1>
+    <div class="visual">
+      <img src="casquette-story.png" alt="Casquette Crème Vintage" />
+    </div>
+    <div class="link-zone" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

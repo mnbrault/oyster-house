@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/logo OH.png" />
+  <title>Merch : Oyster House Festival</title>
+  <meta name="description" content="Boutique officielle Oyster House : tee-shirts et merchandising du festival de Carnac. Soutenez le collectif TRMG." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Merch : Oyster House Festival" />
+  <meta property="og:description" content="Tee-shirts et merch officiel Oyster House. Soutenez le festival." />
+  <meta property="og:image" content="https://oysterhouse.fr/assets/galerie/editions/2025/oyster-house-2025-055.jpg" />
+  <meta property="og:url" content="https://oysterhouse.fr/merch.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: 'Eskool';
+      src: url('assets/fonts/Eskool-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Sao Torpes';
+      src: url('assets/fonts/SaoTorpes.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --teal: #377771;
+      --teal-deep: #1a4a46;
+      --coral: #f7717d;
+      --sand: #f5ebe0;
+      --terracotta: #c45c3a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Eskool', 'Inter', sans-serif;
+      background: var(--teal-deep);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+
+    /* ── Header ── */
+    .header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 40px;
+      transition: background 0.3s ease;
+    }
+    .header.is-scrolled {
+      background: rgba(26, 74, 70, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .header__back {
+      display: flex; align-items: center;
+      text-decoration: none; color: #fff;
+      font-family: 'Eskool', 'Sora', sans-serif;
+      font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+      background: rgba(255,255,255,0.16);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 40px;
+      padding: 10px 20px;
+      transition: background 0.2s;
+    }
+    .header__back:hover { background: rgba(255,255,255,0.28); }
+    .header__logo {
+      height: 36px; width: auto;
+      filter: invert(1) brightness(2);
+      opacity: 0.92;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    .hero__media {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero__media img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      transform: scale(1.06);
+      animation: hero-drift 18s ease-in-out infinite alternate;
+    }
+    @keyframes hero-drift {
+      from { transform: scale(1.06) translateY(0); }
+      to   { transform: scale(1.12) translateY(-2%); }
+    }
+    .hero__shade {
+      position: absolute; inset: 0; z-index: 1;
+      background:
+        linear-gradient(180deg, rgba(26,74,70,0.25) 0%, rgba(26,74,70,0.15) 40%, rgba(26,74,70,0.88) 100%),
+        linear-gradient(90deg, rgba(26,74,70,0.45) 0%, transparent 55%);
+    }
+    .hero__content {
+      position: relative; z-index: 2;
+      padding: 0 40px 72px;
+      max-width: 720px;
+      animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    @keyframes rise-in {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero__brand {
+      font-family: 'Sora', sans-serif;
+      font-size: 12px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 14px;
+    }
+    .hero__title {
+      font-family: 'Sao Torpes', 'Sora', sans-serif;
+      font-size: clamp(52px, 9vw, 96px);
+      font-weight: 800;
+      letter-spacing: -3px;
+      line-height: 0.92;
+      margin-bottom: 18px;
+    }
+    .hero__lead {
+      font-size: clamp(15px, 1.6vw, 18px);
+      line-height: 1.55;
+      color: rgba(255,255,255,0.9);
+      max-width: 36ch;
+      margin-bottom: 28px;
+    }
+    .hero__cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      text-decoration: none;
+      background: var(--coral);
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px; font-weight: 700;
+      letter-spacing: 0.3px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      box-shadow: 0 8px 24px rgba(247,113,125,0.35);
+    }
+    .hero__cta:hover {
+      transform: translateY(-2px);
+      background: #ff8a93;
+      box-shadow: 0 12px 28px rgba(247,113,125,0.45);
+    }
+
+    /* Lookbook patchwork */
+    .lookbook {
+      background: var(--sand);
+      color: #1a2e2c;
+      padding: 72px 40px 80px;
+    }
+    .lookbook__intro {
+      max-width: 1100px;
+      margin: 0 auto 36px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .lookbook__label {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .lookbook__title {
+      font-family: 'Sao Torpes', 'Sora', sans-serif;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      color: var(--teal-deep);
+    }
+    .lookbook__text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(26,46,44,0.72);
+      max-width: 30ch;
+    }
+    .lookbook__grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 240px 240px;
+      gap: 12px;
+    }
+    .lookbook__shot {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .lookbook__shot.is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Tall portrait anchor */
+    .lookbook__shot:nth-child(1) {
+      grid-column: 1 / 5;
+      grid-row: 1 / 3;
+      transition-delay: 0.05s;
+    }
+    /* Wide landscape */
+    .lookbook__shot:nth-child(2) {
+      grid-column: 5 / 13;
+      grid-row: 1 / 2;
+      transition-delay: 0.12s;
+    }
+    /* Mid left */
+    .lookbook__shot:nth-child(3) {
+      grid-column: 5 / 9;
+      grid-row: 2 / 3;
+      transition-delay: 0.18s;
+    }
+    /* Mid right */
+    .lookbook__shot:nth-child(4) {
+      grid-column: 9 / 13;
+      grid-row: 2 / 3;
+      transition-delay: 0.24s;
+    }
+    .lookbook__shot img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .lookbook__shot:hover img { transform: scale(1.05); }
+    .lookbook__shot figcaption {
+      position: absolute; left: 16px; bottom: 14px;
+      font-family: 'Sora', sans-serif;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+
+    /* Product */
+    .product {
+      background: #1f5652;
+      color: #fff;
+      padding: 80px 40px;
+    }
+    .product__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.4fr 0.7fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .product__visual {
+      background: transparent;
+      border-radius: 0;
+      overflow: visible;
+      box-shadow: none;
+    }
+
+    /* ── Tee float viewer ── */
+    .tee-viewer {
+      position: relative;
+      background: transparent;
+    }
+    .tee-viewer__scene {
+      position: relative;
+      width: 100%;
+      height: min(82vw, 720px);
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .tee-viewer__stage {
+      position: relative;
+      width: min(100%, 780px);
+      aspect-ratio: 1535 / 1024;
+      will-change: transform;
+      filter: drop-shadow(0 32px 40px rgba(0, 12, 20, 0.55));
+    }
+    .tee-viewer__shot {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 42%;
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.85s ease;
+    }
+    .tee-viewer__shot.is-active { opacity: 1; }
+    .tee-viewer__floor {
+      position: absolute;
+      left: 50%; bottom: 28px;
+      width: 280px; height: 40px;
+      transform: translateX(-50%);
+      background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(0, 12, 18, 0.5), transparent 72%);
+      filter: blur(5px);
+      z-index: 0;
+      pointer-events: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tee-viewer__stage { transform: none !important; }
+      .tee-viewer__shot { transition: none; }
+      .cap-viewer__stage { transform: none !important; }
+    }
+
+    /* ── Cap float viewer ── */
+    .product--cap {
+      background: #f2ccc3;
+      color: #1a2e2c;
+      padding-top: 48px;
+      padding-bottom: 80px;
+    }
+    .product--cap .product__label {
+      color: #377771;
+    }
+    .product--cap .product__lead {
+      color: rgba(26, 46, 44, 0.75);
+    }
+    .cap-viewer__scene {
+      position: relative;
+      width: 100%;
+      height: min(70vw, 520px);
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .cap-viewer__stage {
+      position: relative;
+      width: min(100%, 640px);
+      will-change: transform;
+      filter: drop-shadow(0 28px 36px rgba(60, 42, 28, 0.28));
+    }
+    .cap-viewer__stage img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .product__label {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: #ffaf87;
+      margin-bottom: 12px;
+    }
+    .product__title {
+      font-family: 'Sao Torpes', 'Sora', sans-serif;
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      margin-bottom: 14px;
+    }
+    .product__lead {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.82);
+      max-width: 36ch;
+      margin-bottom: 28px;
+    }
+    .product__specs {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .product__specs li {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.45;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .product__specs li:last-child { border-bottom: none; padding-bottom: 0; }
+    .product__specs strong {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      padding-top: 2px;
+    }
+    .product__sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .product__size {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: var(--teal-deep);
+      background: rgba(255,255,255,0.92);
+      border-radius: 6px;
+      padding: 5px 8px;
+      min-width: 34px;
+      text-align: center;
+    }
+    .product__cta {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      background: var(--coral);
+      color: #fff;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 14px 26px;
+      border-radius: 999px;
+      transition: transform 0.2s, background 0.2s;
+      box-shadow: 0 8px 24px rgba(247,113,125,0.3);
+    }
+    .product__cta:hover {
+      transform: translateY(-2px);
+      background: #ff8a93;
+    }
+
+    /* Boutique */
+    .boutique {
+      position: relative;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(55,119,113,0.55), transparent 70%),
+        var(--teal-deep);
+      padding: 80px 24px 100px;
+    }
+    .boutique__header {
+      max-width: 880px;
+      margin: 0 auto 32px;
+      text-align: center;
+      animation: rise-in 0.8s ease both;
+    }
+    .boutique__label {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 12px;
+    }
+    .boutique__title {
+      font-family: 'Sao Torpes', 'Sora', sans-serif;
+      font-size: clamp(32px, 4.5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 14px;
+    }
+    .boutique__text {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.78);
+      max-width: 42ch;
+      margin: 0 auto;
+    }
+
+    .boutique__frame {
+      max-width: 880px;
+      margin: 0 auto;
+      position: relative;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.12),
+        0 24px 60px rgba(0, 20, 30, 0.45);
+    }
+    .boutique__frame::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--coral), var(--terracotta), #ffaf87);
+      z-index: 2;
+    }
+    .boutique__toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      background: #faf7f2;
+      border-bottom: 1px solid rgba(26,46,44,0.08);
+    }
+    .boutique__toolbar-brand {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .boutique__toolbar-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--terracotta);
+      box-shadow: 0 0 0 4px rgba(196,92,58,0.18);
+    }
+    .boutique__toolbar-title {
+      font-family: 'Sora', sans-serif;
+      font-size: 13px; font-weight: 700;
+      color: var(--teal-deep);
+    }
+    .boutique__toolbar-sub {
+      font-size: 12px;
+      color: rgba(26,46,44,0.55);
+    }
+    .boutique__toolbar-link {
+      font-family: 'Sora', sans-serif;
+      font-size: 12px; font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .boutique__toolbar-link:hover { color: var(--coral); }
+
+    .boutique__widget iframe {
+      display: block;
+      width: 100%;
+      min-height: 720px;
+      border: none;
+      background: #fff;
+    }
+
+    .boutique__note {
+      max-width: 880px;
+      margin: 18px auto 0;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    @media (max-width: 900px) {
+      .product__inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .lookbook__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 200px 200px;
+      }
+      .lookbook__shot:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+      }
+      .lookbook__shot:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+      .lookbook__shot:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      .lookbook__shot:nth-child(4) {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+      }
+    }
+    @media (max-width: 600px) {
+      .header { padding: 16px 20px; }
+      .hero__content { padding: 0 20px 56px; }
+      .lookbook { padding: 48px 20px 56px; }
+      .lookbook__grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 180px 200px;
+      }
+      .lookbook__shot:nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        min-height: 280px;
+      }
+      .lookbook__shot:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+      .lookbook__shot:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+      .lookbook__shot:nth-child(4) {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+      }
+      .product { padding: 48px 20px 56px; }
+      .product__specs li { grid-template-columns: 76px 1fr; }
+      .boutique { padding: 56px 16px 72px; }
+      .boutique__toolbar { flex-wrap: wrap; }
+      .boutique__frame { border-radius: 16px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero__media img { animation: none; transform: none; }
+      .lookbook__shot { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+  <link rel="stylesheet" href="oyster-player.css" />
+  <script src="oyster-player.js"></script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <a href="index.html" class="header__back">← Retour au festival</a>
+    <img src="assets/logo OH.png" alt="Oyster House" class="header__logo" />
+  </header>
+
+  <section class="hero">
+    <div class="hero__media" aria-hidden="true">
+      <img
+        src="assets/galerie/editions/2025/oyster-house-2025-055.jpg"
+        alt=""
+        fetchpriority="high"
+      />
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__brand">Oyster House · Collectif TRMG</p>
+      <h1 class="hero__title">Merch.</h1>
+      <p class="hero__lead">Le tee-shirt 2026 est disponible</p>
+      <a href="#boutique" class="hero__cta">Commander →</a>
+    </div>
+  </section>
+
+  <section class="lookbook" aria-label="Lookbook merch Oyster House">
+    <div class="lookbook__intro">
+      <div>
+        <p class="lookbook__label">Lookbook</p>
+        <h2 class="lookbook__title">Porté par<br>les bénévoles<br>et tous les PEV du Morbihan.</h2>
+      </div>
+      <p class="lookbook__text">Même teinte que les couchers de soleil sur la baie.</p>
+    </div>
+
+    <div class="lookbook__grid">
+      <figure class="lookbook__shot">
+        <img
+          src="assets/galerie/2022/PHOTOS_2022/OH_2022_PIC_YANNAUDIC/0042-Oyster-House-2022-YA5_4820.jpg"
+          alt="Bénévoles Oyster House 2022 en tee-shirts terracotta"
+          loading="lazy"
+        />
+        <figcaption>2022</figcaption>
+      </figure>
+      <figure class="lookbook__shot">
+        <img
+          src="assets/galerie/2022/PHOTOS_2022/OH_2022_PIC_YANNAUDIC/0047-Oyster-House-2022-YA5_4846.jpg"
+          alt="Équipe et PEV Oyster House 2022"
+          loading="lazy"
+        />
+        <figcaption>2022</figcaption>
+      </figure>
+      <figure class="lookbook__shot">
+        <img
+          src="assets/galerie/editions/2025/oyster-house-2025-075.jpg"
+          alt="Bénévoles Oyster House 2025"
+          loading="lazy"
+        />
+        <figcaption>2025</figcaption>
+      </figure>
+      <figure class="lookbook__shot">
+        <img
+          src="assets/galerie/editions/2023/OYSTERHOUSE_CLEMENTGERBAUD_HD-145.jpg"
+          alt="Bénévoles Oyster House 2023"
+          loading="lazy"
+        />
+        <figcaption>2023</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="product" id="produit" aria-label="Tee-shirt officiel">
+    <div class="product__inner">
+      <div class="product__visual tee-viewer" id="teeViewer">
+        <div class="tee-viewer__scene" id="teeScene">
+          <div class="tee-viewer__floor" aria-hidden="true"></div>
+          <div class="tee-viewer__stage" id="teeStage">
+            <img
+              class="tee-viewer__shot is-active"
+              src="assets/Teeshirt/front.png?v=2"
+              alt="Tee-shirt Oyster House Mocha, face : logo OH"
+              width="1535"
+              height="1024"
+              decoding="async"
+            />
+            <img
+              class="tee-viewer__shot"
+              src="assets/Teeshirt/back.png?v=2"
+              alt="Tee-shirt Oyster House Mocha, dos : coquille d’huître"
+              width="1535"
+              height="1024"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="product__info">
+        <p class="product__label">Le tee officiel</p>
+        <h2 class="product__title">Stanley Stella Freestyler Mocha.</h2>
+        <p class="product__lead">Coton bio, coupe unisexe. Logo OH devant, grande coquille au dos.</p>
+        <ul class="product__specs">
+          <li>
+            <strong>Tailles</strong>
+            <div>
+              <div class="product__sizes" aria-label="Tailles disponibles">
+                <span class="product__size">XS</span>
+                <span class="product__size">S</span>
+                <span class="product__size">M</span>
+                <span class="product__size">L</span>
+                <span class="product__size">XL</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#boutique" class="product__cta">Commander →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="product product--cap" id="casquette" aria-label="Casquette officielle">
+    <div class="product__inner">
+      <div class="product__visual cap-viewer" id="capViewer">
+        <div class="cap-viewer__scene">
+          <div class="cap-viewer__stage" id="capStage">
+            <img
+              src="assets/Teeshirt/casquette.png"
+              alt="Casquette Oyster House crème, logo OH noir devant"
+              width="1200"
+              height="800"
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="product__info">
+        <p class="product__label">La casquette</p>
+        <h2 class="product__title">Casquette OH crème.</h2>
+        <p class="product__lead">Logo OH brodé, Beechfield Vintage Stone.</p>
+        <a href="#boutique" class="product__cta">Commander →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="boutique" id="boutique">
+    <div class="boutique__header">
+      <p class="boutique__label">Boutique</p>
+      <h2 class="boutique__title">Choisis ta taille.</h2>
+      <p class="boutique__text">Paiement sécurisé via HelloAsso, au profit de T.R.M.G.</p>
+    </div>
+
+    <div class="boutique__frame">
+      <div class="boutique__toolbar">
+        <div class="boutique__toolbar-brand">
+          <span class="boutique__toolbar-dot" aria-hidden="true"></span>
+          <div>
+            <div class="boutique__toolbar-title">Oyster House Merch</div>
+            <div class="boutique__toolbar-sub">Tee-shirt & casquette · Collectif TRMG</div>
+          </div>
+        </div>
+        <a
+          class="boutique__toolbar-link"
+          href="https://www.helloasso.com/associations/t-r-m-g/boutiques/merch"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ouvrir sur HelloAsso ↗
+        </a>
+      </div>
+      <div class="boutique__widget">
+        <iframe
+          id="haWidget"
+          title="Boutique merch Oyster House : HelloAsso"
+          allowtransparency="true"
+          scrolling="auto"
+          src="https://www.helloasso.com/associations/t-r-m-g/boutiques/merch/widget"
+          style="width: 100%; height: 720px; border: none;"
+        ></iframe>
+      </div>
+    </div>
+    <p class="boutique__note">Si le formulaire ne charge pas, utilise le lien HelloAsso ci-dessus.</p>
+  </section>
+
+  <script>
+    (function () {
+      var header = document.getElementById('header');
+      window.addEventListener('scroll', function () {
+        header.classList.toggle('is-scrolled', window.scrollY > 40);
+      }, { passive: true });
+
+      var shots = document.querySelectorAll('.lookbook__shot');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        shots.forEach(function (shot) { io.observe(shot); });
+      } else {
+        shots.forEach(function (shot) { shot.classList.add('is-in'); });
+      }
+
+      window.addEventListener('message', function (e) {
+        if (!e.origin || e.origin.indexOf('helloasso.com') === -1) return;
+        var dataHeight = e.data && e.data.height;
+        if (!dataHeight) return;
+        var el = document.getElementById('haWidget');
+        if (!el) return;
+        if (dataHeight > parseFloat(el.style.height || 0)) {
+          el.style.height = dataHeight + 'px';
+        }
+      });
+    })();
+  </script>
+
+  <!-- Tee float : anime.js v4 (ESM), auto sans clic + alternance face/dos -->
+  <script type="module">
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    async function loadAnime() {
+      try {
+        return await import('https://cdn.jsdelivr.net/npm/animejs@4.0.2/+esm');
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function floatStage(stage, opts = {}) {
+      if (!stage) return;
+      const state = { ty: 0, rx: opts.rx ?? -4, ry: opts.ry ?? -8, scale: 1 };
+      const render = () => {
+        stage.style.transform =
+          `translateY(${state.ty}px) rotateX(${state.rx}deg) rotateY(${state.ry}deg) scale(${state.scale})`;
+      };
+      render();
+      return { state, render };
+    }
+
+    const teeStage = document.getElementById('teeStage');
+    const capStage = document.getElementById('capStage');
+    const tee = floatStage(teeStage);
+    const cap = floatStage(capStage, { rx: -2, ry: 6 });
+
+    if (teeStage) {
+      const shots = teeStage.querySelectorAll('.tee-viewer__shot');
+      let face = 0;
+      const flip = () => {
+        if (shots.length < 2) return;
+        shots[face].classList.remove('is-active');
+        face = face === 0 ? 1 : 0;
+        shots[face].classList.add('is-active');
+      };
+      if (!reduce) setInterval(flip, 4500);
+    }
+
+    if (!reduce) {
+      const anime = await loadAnime();
+      if (!anime) {
+        [teeStage, capStage].forEach((el, i) => {
+          if (!el) return;
+          el.style.animation = `merch-float 3.2s ease-in-out infinite alternate`;
+          el.style.animationDelay = i ? '0.6s' : '0s';
+        });
+        const style = document.createElement('style');
+        style.textContent = `
+          @keyframes merch-float {
+            from { transform: translateY(-14px) rotateX(-4deg) rotateY(-8deg) scale(1); }
+            to   { transform: translateY(14px) rotateX(-4deg) rotateY(8deg) scale(1.02); }
+          }
+        `;
+        document.head.appendChild(style);
+      } else {
+        const { animate } = anime;
+        const runFloat = (item) => {
+          if (!item) return;
+          const { state, render } = item;
+          animate(state, {
+            ty: [-14, 14],
+            duration: 3200,
+            ease: 'inOutSine',
+            loop: true,
+            alternate: true,
+            onUpdate: render,
+          });
+          animate(state, {
+            ry: [state.ry - 8, state.ry + 8],
+            duration: 5600,
+            ease: 'inOutSine',
+            loop: true,
+            alternate: true,
+            onUpdate: render,
+          });
+          animate(state, {
+            scale: [1, 1.025],
+            duration: 4200,
+            ease: 'inOutSine',
+            loop: true,
+            alternate: true,
+            onUpdate: render,
+          });
+        };
+        runFloat(tee);
+        runFloat(cap);
+      }
+    }
+  </script>
+
+</body>
+</html>

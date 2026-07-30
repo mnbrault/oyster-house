@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="assets/logo OH.png" />
-  <title>Infos pratiques — Oyster House Festival</title>
+  <title>Infos pratiques - Oyster House Festival</title>
   <meta name="description" content="Tout savoir pour venir au festival Oyster House à Carnac, Morbihan : accès, hébergement, billetterie et horaires." />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Infos pratiques — Oyster House Festival" />
+  <meta property="og:title" content="Infos pratiques - Oyster House Festival" />
   <meta property="og:url" content="https://oysterhouse.fr/infos-pratiques.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,6 +80,24 @@
       opacity: 0.9;
       filter: invert(1) brightness(2);
     }
+    .header__right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .header__mobile {
+      display: flex; align-items: center;
+      text-decoration: none; color: rgba(255,255,255,0.9);
+      font-family: 'Eskool', 'Sora', sans-serif; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.4px;
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 40px;
+      padding: 8px 14px;
+      transition: background 0.2s;
+    }
+    .header__mobile:hover { background: rgba(255,255,255,0.28); }
 
     /* ── Contenu ── */
     .page-content {
@@ -127,14 +145,14 @@
       transform: translateY(-3px);
     }
 
-    /* Enjoy — accent jaune */
+    /* Enjoy - accent jaune */
     .info-card--enjoy {
       background: rgba(249,212,35,0.22);
       border-color: rgba(249,212,35,0.45);
     }
     .info-card--enjoy:hover { background: rgba(249,212,35,0.30); }
 
-    /* Consommations — span 2 */
+    /* Consommations - span 2 */
     .info-card--wide {
       grid-column: span 2;
       flex-direction: row;
@@ -173,7 +191,7 @@
       position: relative;
     }
     .info-card__list li::before {
-      content: '—';
+      content: '-';
       position: absolute; left: 0;
       color: rgba(255,255,255,0.4);
     }
@@ -224,6 +242,8 @@
       .header { padding: 16px 20px; }
     }
   </style>
+  <link rel="stylesheet" href="oyster-player.css" />
+  <script src="oyster-player.js"></script>
 </head>
 <body>
 
@@ -235,7 +255,10 @@
     <a href="index.html" class="header__back">
       ← Retour au festival
     </a>
-    <img src="assets/logo OH.png" alt="Oyster House" class="header__logo" />
+    <div class="header__right">
+      <a href="infos-2026.html" class="header__mobile">Version mobile</a>
+      <img src="assets/logo OH.png" alt="Oyster House" class="header__logo" />
+    </div>
   </header>
 
   <!-- Contenu -->
@@ -249,7 +272,7 @@
       <div class="info-card info-card--enjoy">
         <div class="info-card__icon">☀️</div>
         <h2 class="info-card__title">Enjoy</h2>
-        <p class="info-card__text">Bienvenue à l'Oyster House. Profitez du festival, de la mer, de la musique et des huîtres — c'est tout ce qu'on vous demande.</p>
+        <p class="info-card__text">Bienvenue à l'Oyster House. Profitez du festival, de la mer, de la musique et des huîtres - c'est tout ce qu'on vous demande.</p>
       </div>
 
       <!-- Respect -->
@@ -257,9 +280,9 @@
         <div class="info-card__icon">🤝</div>
         <h2 class="info-card__title">Respect</h2>
         <ul class="info-card__list">
-          <li>On célèbre <strong>la diversité</strong> — pas de place pour la discrimination ou le harcèlement.</li>
+          <li>On célèbre <strong>la diversité</strong> - pas de place pour la discrimination ou le harcèlement.</li>
           <li>Gardez un œil sur vous et les autres, <strong>signalez</strong> tout ce qui semble louche.</li>
-          <li>Poubelles, cendriers — <strong>pas de mégots dans les coquillages</strong>, ils repartent à la mer.</li>
+          <li>Poubelles, cendriers - <strong>pas de mégots dans les coquillages</strong>, ils repartent à la mer.</li>
           <li><strong>Consentement :</strong> le respect des autres, c'est sacré.</li>
         </ul>
       </div>

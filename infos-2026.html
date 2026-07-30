@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#3d7fd6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/png" href="assets/logo OH.png" />
+  <title>Infos pratiques 2026 - Oyster House</title>
+  <meta name="description" content="Infos pratiques Oyster House Festival 2026 - horaires, transport, consommations, parking et sécurité." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/infos-2026/infos-2026.css" />
+</head>
+<body>
+  <div class="ui-counter" id="counter" aria-live="polite">001 / 011</div>
+  <p class="ui-hint" id="hint">Glisser ou toucher</p>
+  <div class="ui-dots" id="dots" aria-hidden="true"></div>
+
+  <button type="button" class="ui-tap ui-tap--prev" id="prev" aria-label="Slide précédente"></button>
+  <button type="button" class="ui-tap ui-tap--next" id="next" aria-label="Slide suivante"></button>
+
+  <main class="deck" id="deck" aria-roledescription="carousel" aria-label="Infos pratiques Oyster House 2026">
+    <div class="deck__track" id="track">
+
+      <!-- 001 Welcome -->
+      <section class="slide slide--welcome" aria-label="Bienvenue">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--split">
+          <div>
+            <h1 class="slide__title slide__title--brand">Oyster House</h1>
+            <p class="slide__lead slide__lead--center">
+              Bienvenue à la 9ème édition de la Oyster House, festival les pieds dans l'eau, le temps d'un cycle de marée.
+            </p>
+          </div>
+          <div class="slide__meta">
+            <div class="slide__meta-col">
+              Pointe du Pô<br />
+              56340 - CARNAC
+            </div>
+            <div class="slide__meta-col slide__meta-col--right">
+              Début : 14h<br />
+              Entrée avant 20h<br />
+              Fin : 00h
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 002 Transport -->
+      <section class="slide" aria-label="Transport">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <h2 class="slide__title">Transport</h2>
+          <p class="slide__lead">
+            Navette en continu au départ du parking de l'événement vers l'office de tourisme de Carnac.
+          </p>
+          <div class="slide__stack">
+            <span>Début des rotations : <strong>23h30</strong></span>
+            <span>Fin des rotations : <strong>1h45</strong></span>
+          </div>
+          <hr class="slide__divider" />
+          <div class="slide__stack">
+            <span>1 navette à destination du <strong>STIRWEN</strong></span>
+            <span>Départ <strong>01h00</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 003 Consommations -->
+      <section class="slide" aria-label="Conso">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--split">
+          <div>
+            <h2 class="slide__title">Conso</h2>
+            <p class="slide__lead">
+              Nous travaillons avec des producteurs et artisans locaux pour vous proposer des produits raisonnés et de qualité.
+            </p>
+          </div>
+          <div class="slide__price-block">
+            <p class="slide__price">Bon de consommation : 4&nbsp;€</p>
+            <p class="slide__cash">Cash only</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 004 Bières / Cidre -->
+      <section class="slide" aria-label="Bières et cidre">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <div class="slide__block">
+            <h2 class="slide__title">Bières</h2>
+            <ul class="slide__list">
+              <li>Pils - <strong>Lancelot</strong></li>
+              <li>IPA Artisanale - <strong>Trého / Seal</strong></li>
+            </ul>
+            <ul class="slide__list slide__list--prices">
+              <li>25cl - 1 ticket</li>
+              <li>50cl - 2 tickets</li>
+              <li>1,5L - 6 tickets</li>
+            </ul>
+          </div>
+          <div class="slide__block">
+            <h3 class="slide__subtitle">Cidre de Carnac</h3>
+            <ul class="slide__list slide__list--prices">
+              <li>Bouteille - 3 tickets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 005 Vins -->
+      <section class="slide" aria-label="Vins">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <h2 class="slide__title">Vins</h2>
+          <p class="slide__kicker">Château d'Astros</p>
+          <ul class="slide__list">
+            <li>Cuvée Amour Bio IGP</li>
+            <li>Côte de Provence</li>
+            <li><strong>Blanc &amp; Rosé</strong></li>
+          </ul>
+          <ul class="slide__list slide__list--prices">
+            <li>Bouteille - 6 tickets</li>
+            <li>Verre - 1 ticket</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 006 Sans Alcool -->
+      <section class="slide" aria-label="Sans alcool">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <h2 class="slide__title">Sans Alcool</h2>
+          <p class="slide__kicker">25cl - 1 ticket</p>
+          <ul class="slide__list">
+            <li>Jus de Pomme de <strong>Carnac</strong></li>
+          </ul>
+          <hr class="slide__divider" />
+          <ul class="slide__list">
+            <li>Kombucha - <strong>Little Joy</strong></li>
+            <li>IPA ou Citron Menthe</li>
+          </ul>
+          <hr class="slide__divider" />
+          <ul class="slide__list">
+            <li>Eau Plate ou Pétillante</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 007 Terroir / Merroir -->
+      <section class="slide" aria-label="Terroir et Merroir">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <div class="slide__block">
+            <h2 class="slide__title">Terroir</h2>
+            <p class="slide__kicker">Kerdo Traiteur</p>
+            <ul class="slide__list">
+              <li>Burger Pulled Chicken - 2 tickets</li>
+              <li>Burger Végétarien - 2 tickets</li>
+              <li>Crêpe Nut - 1 ticket</li>
+            </ul>
+          </div>
+          <div class="slide__block">
+            <h2 class="slide__title">Merroir</h2>
+            <ul class="slide__list">
+              <li>6 Huîtres - 2 tickets</li>
+              <li>1/2 Homard - 4 tickets</li>
+              <li>Kebab de poulpe - 2 tickets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 008 Parking -->
+      <section class="slide" aria-label="Parking">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--split">
+          <div>
+            <h2 class="slide__title">Parking</h2>
+            <p class="slide__para">Un parking sera mis à disposition à droite de la route en arrivant.</p>
+            <p class="slide__para">Interdiction de stationner sur le parking public de la plage, au bout.</p>
+            <p class="slide__para">Un parking à vélo sera mis à disposition à l'intérieur de l'évènement.</p>
+          </div>
+          <p class="slide__note">L'équipe décline toute responsabilité en cas de dommages ou de vols.</p>
+        </div>
+      </section>
+
+      <!-- 009 Sécurité -->
+      <section class="slide" aria-label="Sécurité">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <h2 class="slide__title">Sécurité</h2>
+          <p class="slide__para">Mise à disposition d'éthylotests et de gilets jaunes à la sortie de l'événement.</p>
+          <p class="slide__para">La circulation à pied ou à vélo en état d'ébriété est interdite par la loi.</p>
+          <p class="slide__para">La circulation sans gilet jaune sur des routes non éclairées est interdite par la loi.</p>
+        </div>
+      </section>
+
+      <!-- 010 Respect -->
+      <section class="slide" aria-label="Respect">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content slide__content--top">
+          <h2 class="slide__title">Respect</h2>
+          <p class="slide__para">On célèbre <strong>la diversité</strong>, soyons sympas et respectueux, pas de place pour la discrimination ou le harcèlement.</p>
+          <p class="slide__para">Gardez un oeil sur vous et les autres, <strong>signalez</strong> tout ce qui semble louche à notre équipe.</p>
+          <p class="slide__para"><strong>Respectez</strong> ce lieu magique avec nous : utilisez les poubelles et les cendriers, pas de mégots dans les coquillages, ils repartent à la mer.</p>
+          <p class="slide__para"><strong>Consentement</strong> : le respect des autres, c'est sacré.</p>
+        </div>
+      </section>
+
+      <!-- 011 ENJOY -->
+      <section class="slide slide--enjoy" aria-label="Enjoy">
+        <div class="slide__bg" role="presentation"></div>
+        <div class="slide__content">
+          <h2 class="slide__title slide__title--xl">ENJOY</h2>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="assets/infos-2026/infos-2026.js"></script>
+</body>
+</html>
